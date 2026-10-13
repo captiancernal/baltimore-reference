@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baltimore Reference</title>
+<meta name="description" content="Baltimore Reference: every season, player, award and playoff run from an MLB The Show Orioles dynasty, with player cards, comparisons, analytics and daily trivia.">
+<meta name="theme-color" content="#0E2A4E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Baltimore Reference">
+<meta property="og:title" content="Baltimore Reference">
+<meta property="og:description" content="The Orioles dynasty, season by season: player cards, comparisons, analytics, Hall of Fame and daily trivia.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baltimore Reference">
+<meta name="twitter:description" content="The Orioles dynasty, season by season.">
+<meta name="twitter:image" content="og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='4' fill='%23DF4601'/%3E%3Cpath d='M6 31 L20 9 L34 31' fill='none' stroke='%23FBF8F1' stroke-width='2.6'/%3E%3Ccircle cx='20' cy='22' r='5.4' fill='%23FBF8F1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF8F1; --panel:#FFFFFF; --ink:#0E2A4E; --text:#1D2433; --muted:#5E6573;
+  --rule:#DCD3C0; --rule-strong:#C4B99F; --zebra:#F6F1E5; --head:#EFE8D6;
+  --orange:#DF4601; --orange-ink:#B33A00; --orange-tint:#FCE6DA;
+  --gold:#A9821F; --gold-tint:#F7EBC6; --navy-2:#2B5287; --good:#2E7D4F; --bad:#B3261E;
+  --masthead:#0E2A4E; --masthead-2:#16365F; --masthead-text:#FBF8F1;
+  --display:"Oswald","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --body:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1626; --panel:#132036; --ink:#EDE5D2; --text:#D8D2C3; --muted:#9AA3B2;
+    --rule:#26354F; --rule-strong:#34476A; --zebra:#16243C; --head:#1B2B47;
+    --orange:#FF6A2B; --orange-ink:#FF8A55; --orange-tint:#3A1F12;
+    --gold:#D9B24A; --gold-tint:#352D16; --navy-2:#8FB3E8; --good:#6CC28E; --bad:#FF7B72;
+    --masthead:#071022; --masthead-2:#0E1C34; --masthead-text:#EDE5D2;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1626; --panel:#132036; --ink:#EDE5D2; --text:#D8D2C3; --muted:#9AA3B2;
+  --rule:#26354F; --rule-strong:#34476A; --zebra:#16243C; --head:#1B2B47;
+  --orange:#FF6A2B; --orange-ink:#FF8A55; --orange-tint:#3A1F12;
+  --gold:#D9B24A; --gold-tint:#352D16; --navy-2:#8FB3E8; --good:#6CC28E; --bad:#FF7B72;
+  --masthead:#071022; --masthead-2:#0E1C34; --masthead-text:#EDE5D2;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:15px;line-height:1.45;font-variant-numeric:tabular-nums}
+a{color:var(--navy-2);text-decoration:none}
+a:hover{text-decoration:underline;color:var(--orange-ink)}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:2px}
+img,svg{max-width:100%}
+button{font-family:inherit;font-size:inherit;cursor:pointer}
+input,select{font-family:inherit;font-size:15px}
+
+/* Masthead */
+.masthead{background:var(--masthead);color:var(--masthead-text);border-bottom:4px solid var(--orange)}
+.mast-inner{max-width:1240px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--masthead-text);text-decoration:none}
+.brand:hover{text-decoration:none;color:var(--masthead-text)}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-word{font-family:var(--display);font-weight:600;font-size:26px;letter-spacing:.01em;line-height:1}
+.brand-word small{display:block;font-family:var(--body);font-weight:400;font-size:12px;opacity:.75;letter-spacing:0;margin-top:3px}
+.search{position:relative;flex:1 1 260px;max-width:440px;margin-left:auto}
+.search input{width:100%;padding:8px 12px;border-radius:3px;border:1px solid transparent;background:var(--masthead-text);color:#1D2433}
+.search-results{position:absolute;top:100%;left:0;right:0;z-index:20;background:var(--panel);color:var(--text);border:1px solid var(--rule-strong);border-top:none;max-height:340px;overflow:auto;box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.search-results a{display:flex;justify-content:space-between;gap:8px;padding:7px 12px;color:var(--text);border-bottom:1px solid var(--rule)}
+.search-results a:hover,.search-results a.active{background:var(--orange-tint);text-decoration:none}
+.search-results .kind{color:var(--muted);font-size:13px}
+.theme-btn{background:transparent;border:1px solid rgba(255,255,255,.35);color:var(--masthead-text);border-radius:3px;padding:6px 10px}
+.nav{background:var(--masthead-2)}
+.nav-inner{max-width:1240px;margin:0 auto;padding:0 8px;display:flex;overflow-x:auto;scrollbar-width:thin}
+.nav a{color:var(--masthead-text);opacity:.85;padding:9px 12px;white-space:nowrap;font-weight:500;border-bottom:3px solid transparent}
+.nav a:hover{opacity:1;text-decoration:none;color:var(--masthead-text)}
+.nav a.on{opacity:1;border-bottom-color:var(--orange)}
+
+main{max-width:1240px;margin:0 auto;padding:18px 16px 40px}
+.crumbs{font-size:13px;color:var(--muted);margin-bottom:8px}
+.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:600;line-height:1.1;margin:0}
+h1{font-size:34px;letter-spacing:.005em}
+h2{font-size:22px;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--ink);display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h2 .h-note{font-family:var(--body);font-weight:400;font-size:13px;color:var(--muted)}
+h3{font-size:17px;margin:0 0 8px}
+p{margin:0 0 10px;max-width:78ch}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px}
+@media (max-width:920px){.layout{grid-template-columns:minmax(0,1fr)}}
+.box{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:12px 14px;margin-bottom:16px}
+.box h3{border-bottom:1px solid var(--rule);padding-bottom:6px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+
+/* Tables */
+.tw{overflow-x:auto;border:1px solid var(--rule);background:var(--panel);margin-bottom:6px}
+table.st{border-collapse:collapse;width:100%;font-size:14px;white-space:nowrap}
+table.st th,table.st td{padding:4px 8px;border-bottom:1px solid var(--rule)}
+table.st thead th{background:var(--head);color:var(--ink);font-weight:600;text-align:right;border-bottom:2px solid var(--rule-strong);position:relative;user-select:none}
+table.st thead th.t,table.st td.t{text-align:left}
+table.st td{text-align:right}
+table.st tbody tr:nth-child(even){background:var(--zebra)}
+table.st tbody tr:hover{background:var(--orange-tint)}
+table.st th.sortable{cursor:pointer}
+table.st th.sortable:hover{color:var(--orange-ink)}
+table.st th.sorted::after{content:"";display:inline-block;margin-left:4px;border:4px solid transparent;vertical-align:middle}
+table.st th.sorted.desc::after{border-top-color:currentColor;margin-top:4px}
+table.st th.sorted.asc::after{border-bottom-color:currentColor;margin-top:-4px}
+table.st tfoot td{font-weight:700;background:var(--head);border-top:2px solid var(--rule-strong)}
+table.st tr.mine td{background:var(--orange-tint)}
+table.st tr.hl td{font-weight:600}
+table.st td.lead{font-weight:700;color:var(--orange-ink)}
+.tnote{font-size:12.5px;color:var(--muted);margin:2px 0 12px}
+
+/* Badges */
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.bdg{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:2px;border:1px solid var(--rule-strong);background:var(--panel);color:var(--ink);white-space:nowrap}
+.bdg.o{background:var(--orange);border-color:var(--orange);color:#fff}
+.bdg.g{background:var(--gold-tint);border-color:var(--gold);color:var(--ink)}
+.bdg.n{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:0 4px;border-radius:2px;margin-left:4px;vertical-align:1px;line-height:16px}
+.tag.as{background:var(--ink);color:var(--paper)}
+.tag.r{border:1px solid var(--navy-2);color:var(--navy-2)}
+.tag.n99{background:var(--gold-tint);color:var(--ink);border:1px solid var(--gold)}
+.tag.hof{background:var(--gold);color:#fff}
+.tag.v{background:var(--orange-tint);color:var(--orange-ink);border:1px solid var(--orange)}
+
+/* Home banner wall */
+.franchise{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end;margin-bottom:14px}
+.franchise h1{font-size:46px;text-transform:none}
+.franchise .lede{font-size:16px;color:var(--muted);margin-top:6px}
+.fstats{display:flex;gap:22px;flex-wrap:wrap}
+.fstat b{display:block;font-family:var(--display);font-size:30px;color:var(--ink);font-weight:600;line-height:1}
+.fstat span{font-size:13px;color:var(--muted)}
+@media (max-width:760px){.franchise{grid-template-columns:1fr}.franchise h1{font-size:36px}}
+.wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(86px,1fr));gap:8px;margin:6px 0 4px;padding:16px 14px 10px;background:var(--masthead);border-radius:3px}
+.pennant{position:relative;display:block;color:var(--masthead-text);text-decoration:none;text-align:center;padding:10px 4px 26px;clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%);background:#2A4570;min-height:132px;transition:transform .15s}
+.pennant:hover{text-decoration:none;color:var(--masthead-text);transform:translateY(-3px)}
+.pennant .yr{font-family:var(--display);font-size:22px;font-weight:600;display:block;line-height:1.1}
+.pennant .rec{font-size:13px;opacity:.9;display:block}
+.pennant .res{font-size:11.5px;display:block;margin-top:6px;line-height:1.2;opacity:.95}
+.pennant.champ{background:var(--orange)}
+.pennant.pennantwin{background:linear-gradient(#2A4570,#2A4570) padding-box;box-shadow:inset 0 0 0 3px var(--orange)}
+.pennant.div{background:#1F5A8C}
+.pennant.miss{background:#3A4458;color:#C9CFDA}
+.pennant .trophy{display:block;margin:6px auto 0;width:20px;height:20px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin:6px 0 16px}
+.legend i{display:inline-block;width:12px;height:12px;vertical-align:-1px;margin-right:5px;border-radius:2px}
+
+/* Player header */
+.phead{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:start;background:var(--panel);border:1px solid var(--rule);border-top:4px solid var(--ink);padding:16px;border-radius:3px}
+.phead.hof{border-top-color:var(--gold)}
+.jersey{width:92px;height:104px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:44px;color:#fff;background:var(--orange);clip-path:polygon(22% 0,78% 0,100% 18%,88% 30%,88% 100%,12% 100%,12% 30%,0 18%)}
+.jersey.none{background:var(--rule-strong);font-size:28px}
+.phead h1{font-size:38px}
+.pmeta{margin:6px 0 0;font-size:14.5px}
+.pmeta b{color:var(--ink)}
+.hofband{background:var(--gold-tint);border:1px solid var(--gold);color:var(--ink);padding:6px 10px;margin-top:10px;font-weight:600;border-radius:2px;display:inline-block}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:0;margin:14px 0 4px;border:1px solid var(--rule);background:var(--panel)}
+.summary>div{padding:8px 10px;border-right:1px solid var(--rule)}
+.summary>div:last-child{border-right:none}
+.summary .lbl{font-size:12px;color:var(--muted)}
+.summary .val{font-family:var(--display);font-size:24px;color:var(--ink);font-weight:500;line-height:1.15}
+.summary .sub{font-size:11.5px;color:var(--muted)}
+.strip{display:flex;gap:3px;margin:12px 0 0;flex-wrap:wrap}
+.strip a{font-size:12px;padding:2px 6px;border-radius:2px;background:var(--zebra);color:var(--muted);border:1px solid var(--rule)}
+.strip a.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.strip a.on.champ{background:var(--orange);border-color:var(--orange);color:#fff}
+
+/* Charts */
+figure.chart{margin:0 0 16px;background:var(--panel);border:1px solid var(--rule);padding:10px 12px 8px;border-radius:3px}
+figure.chart figcaption{font-size:13px;color:var(--muted);margin-top:4px}
+figure.chart .ctitle{font-family:var(--display);font-size:16px;color:var(--ink);margin-bottom:4px;font-weight:500}
+svg.c{display:block;width:100%;height:auto;overflow:visible}
+svg.c text{font-family:var(--body);font-size:11px;fill:var(--muted)}
+svg.c .axis{stroke:var(--rule-strong);stroke-width:1}
+svg.c .grid{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 3}
+.keys{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin:2px 0 4px}
+.keys i{display:inline-block;width:14px;height:3px;vertical-align:3px;margin-right:5px}
+
+/* Bracket */
+.bracket{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:center}
+@media (max-width:700px){.bracket{grid-template-columns:1fr}}
+.series{background:var(--panel);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.series .rd{font-size:12px;color:var(--muted);padding:4px 8px;background:var(--head);border-bottom:1px solid var(--rule)}
+.series .tm{display:flex;justify-content:space-between;padding:6px 8px;gap:8px}
+.series .tm+.tm{border-top:1px solid var(--rule)}
+.series .tm.win{font-weight:700;color:var(--ink)}
+.series .tm.me{background:var(--orange-tint)}
+.series .tm .rec{color:var(--muted);font-weight:400;font-size:12.5px}
+.series.ws{border:2px solid var(--orange)}
+
+/* Controls */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0 12px}
+.controls input[type=search],.controls select{padding:6px 10px;border:1px solid var(--rule-strong);border-radius:3px;background:var(--panel);color:var(--text)}
+.seg{display:inline-flex;border:1px solid var(--rule-strong);border-radius:3px;overflow:hidden}
+.seg button{background:var(--panel);border:none;padding:6px 12px;color:var(--text);border-right:1px solid var(--rule-strong)}
+.seg button:last-child{border-right:none}
+.seg button.on{background:var(--ink);color:var(--paper)}
+.btn{background:var(--orange);color:#fff;border:none;border-radius:3px;padding:8px 14px;font-weight:600}
+.btn:hover{background:var(--orange-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule-strong)}
+.btn.ghost:hover{background:var(--zebra)}
+.chk{display:inline-flex;gap:6px;align-items:center;font-size:14px}
+
+/* Leaderboards */
+.lb{background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+.lb h3{margin:0;padding:8px 10px;background:var(--head);border-bottom:1px solid var(--rule-strong);font-size:15px}
+.lb ol{list-style:none;margin:0;padding:0}
+.lb li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:6px;padding:4px 10px;border-bottom:1px solid var(--rule);font-size:14px}
+.lb li:last-child{border-bottom:none}
+.lb li .rk{color:var(--muted)}
+.lb li .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb li .vl{font-weight:600;color:var(--ink)}
+.lb li:first-child .vl{color:var(--orange-ink)}
+
+/* Summary quote */
+.wrap{border-left:4px solid var(--orange);background:var(--panel);padding:10px 14px;margin:14px 0;font-size:15.5px;line-height:1.55;max-width:none}
+.wrap p{max-width:80ch;margin:0}
+
+/* HOF plaques */
+.plaques{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.plaque{background:linear-gradient(180deg,var(--gold-tint),var(--panel));border:1px solid var(--gold);border-radius:4px;padding:16px;position:relative}
+.plaque .num{position:absolute;right:14px;top:8px;font-family:var(--display);font-size:52px;color:var(--gold);opacity:.55;font-weight:700;line-height:1}
+.plaque h3{font-size:22px;margin:0 0 2px;border:none;padding:0}
+.plaque .pos{color:var(--muted);font-size:13px;margin-bottom:10px}
+.plaque dl{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:0 0 10px}
+.plaque dt{font-size:11px;color:var(--muted)}
+.plaque dd{margin:0;font-family:var(--display);font-size:18px;color:var(--ink)}
+
+/* Trivia */
+.quiz{max-width:720px}
+.qcard{background:var(--panel);border:1px solid var(--rule);border-top:4px solid var(--orange);border-radius:3px;padding:18px}
+.qprog{display:flex;gap:4px;margin-bottom:12px}
+.qprog span{flex:1;height:6px;border-radius:2px;background:var(--rule)}
+.qprog span.ok{background:var(--good)}
+.qprog span.no{background:var(--bad)}
+.qprog span.cur{background:var(--orange)}
+.qnum{font-size:13px;color:var(--muted)}
+.qtext{font-family:var(--display);font-size:24px;color:var(--ink);margin:6px 0 14px;line-height:1.2;font-weight:500}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;padding:11px 14px;border:1px solid var(--rule-strong);background:var(--paper);color:var(--text);border-radius:3px;font-size:16px}
+.opt:hover:not([disabled]){border-color:var(--orange);background:var(--orange-tint)}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 16%,var(--panel));font-weight:600}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 14%,var(--panel))}
+.opt[disabled]{cursor:default}
+.explain{margin-top:12px;padding:10px 12px;background:var(--zebra);border-radius:3px;font-size:14.5px}
+.grade{font-family:var(--display);font-size:110px;line-height:1;color:var(--orange);font-weight:700}
+.review li{margin-bottom:8px}
+
+/* Status */
+.status{max-width:640px;margin:40px auto;background:var(--panel);border:1px solid var(--rule);border-top:4px solid var(--orange);padding:22px;border-radius:3px}
+.status h1{font-size:26px;margin-bottom:8px}
+.loading-bar{height:4px;background:var(--rule);overflow:hidden;border-radius:2px;margin-top:14px}
+.loading-bar i{display:block;height:100%;width:35%;background:var(--orange);animation:slide 1.2s ease-in-out infinite}
+@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(300%)}}
+@media (prefers-reduced-motion: reduce){.loading-bar i{animation:none;width:100%}.pennant{transition:none}}
+.warn{background:var(--orange-tint);border:1px solid var(--orange);padding:8px 12px;border-radius:3px;margin-bottom:14px;font-size:14px}
+
+footer{border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
+.foot-inner{max-width:1240px;margin:0 auto;padding:14px 16px 24px;display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.pickers{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:14px}
+.picker{position:relative}
+.picker .chip{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--rule-strong);border-left:5px solid var(--c);background:var(--panel);border-radius:3px;font-weight:600}
+.picker .chip button{background:none;border:none;color:var(--muted);font-size:18px;line-height:1}
+.picker input{width:100%;padding:7px 10px;border:1px dashed var(--rule-strong);border-radius:3px;background:var(--panel);color:var(--text)}
+.dd{position:absolute;left:0;right:0;top:100%;z-index:15;background:var(--panel);border:1px solid var(--rule-strong);max-height:260px;overflow:auto;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.dd button{display:block;width:100%;text-align:left;background:none;border:none;border-bottom:1px solid var(--rule);padding:6px 10px;color:var(--text)}
+.dd button:hover{background:var(--orange-tint)}
+.cmp td.best{color:var(--orange-ink);font-weight:700}
+.facts li{margin-bottom:5px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.kpi{background:var(--panel);border:1px solid var(--rule);padding:8px 10px;border-radius:3px}
+.kpi .v{font-family:var(--display);font-size:24px;color:var(--ink);line-height:1.1}
+.kpi .l{font-size:12.5px;color:var(--muted)}
+.prevnext{display:flex;gap:8px;margin-left:auto}
+.titlebar{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}
+
+/* Mobile menu */
+.menu-btn{display:none}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .mast-inner{gap:10px}
+  .search{order:3;flex-basis:100%;max-width:none}
+  .nav-inner{display:none;flex-direction:column;padding:4px 0 8px}
+  .nav.open .nav-inner{display:flex}
+  .nav a{padding:10px 18px;border-bottom:1px solid rgba(255,255,255,.08);border-left:4px solid transparent}
+  .nav a.on{border-bottom-color:rgba(255,255,255,.08);border-left-color:var(--orange)}
+}
+/* Timeline */
+.tl{position:relative;margin:10px 0 0 0;padding-left:0;list-style:none}
+.tl>li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;padding:0 0 22px;position:relative}
+.tl>li::before{content:"";position:absolute;left:47px;top:0;bottom:0;width:2px;background:var(--rule-strong)}
+.tl>li:last-child::before{bottom:auto;height:30px}
+.tl .yr{position:relative;z-index:1;align-self:start;text-align:center;font-family:var(--display);font-size:22px;font-weight:600;color:#fff;padding:8px 0 16px;clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);background:#2A4570}
+.tl .yr.champ{background:var(--orange)}.tl .yr.pennantwin{background:#2A4570;box-shadow:inset 0 0 0 3px var(--orange)}.tl .yr.div{background:#1F5A8C}.tl .yr.miss{background:#3A4458}.tl .yr.pre{background:var(--gold)}
+.tl .yr a{color:#fff;text-decoration:none}
+.tl .yr small{display:block;font-family:var(--body);font-size:12px;font-weight:500;opacity:.9}
+.tl .ev{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:12px 14px}
+.tl .ev h3{margin-bottom:4px}
+.tl .ev p{margin:6px 0}
+.tl .ev ul{margin:8px 0 0;padding-left:18px}
+.tl .ev li{margin-bottom:3px}
+@media (max-width:600px){.tl>li{grid-template-columns:64px minmax(0,1fr);gap:10px}.tl>li::before{left:31px}.tl .yr{font-size:17px}}
+/* Glossary */
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.gloss dl{margin:0}
+.gloss .term{background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:10px 14px}
+.gloss dt{font-family:var(--display);font-size:18px;color:var(--ink);font-weight:500}
+.gloss dt span{font-family:var(--body);font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.gloss dd{margin:4px 0 0}
+/* Projections */
+.up{color:var(--good);font-weight:600}.down{color:var(--bad);font-weight:600}.flat{color:var(--muted)}
+/* Dialog */
+dialog.card-dlg{border:none;border-radius:4px;padding:0;max-width:min(560px,94vw);background:var(--panel);color:var(--text);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+dialog.card-dlg::backdrop{background:rgba(8,16,32,.6)}
+.card-dlg .dlg-body{padding:14px}
+.card-dlg img{display:block;width:100%;height:auto;border-radius:3px;border:1px solid var(--rule)}
+.card-dlg .dlg-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px;flex-wrap:wrap}
+/* Share */
+.sharebox{margin-top:12px;background:var(--zebra);border:1px solid var(--rule);border-radius:3px;padding:10px 12px}
+.sharebox pre{margin:0 0 8px;font-family:var(--body);white-space:pre-wrap;font-size:15px}
+.sharebox textarea{width:100%;min-height:120px;font-family:var(--body);font-size:14px;padding:8px;border:1px solid var(--rule-strong);border-radius:3px;background:var(--panel);color:var(--text)}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+.modes .qcard{border-top-width:4px}
+.modes .qcard.daily{border-top-color:var(--ink)}
+.streak{font-family:var(--display);font-size:20px;color:var(--ink)}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="mast-inner">
+    <a class="brand" href="#/" aria-label="Baltimore Reference home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="3" fill="#DF4601"/><path d="M6 31 L20 9 L34 31" fill="none" stroke="#FBF8F1" stroke-width="2.4"/><circle cx="20" cy="22" r="5.2" fill="#FBF8F1"/><path d="M16.6 19.3c1.4 1.2 1.4 4.2 0 5.4M23.4 19.3c-1.4 1.2-1.4 4.2 0 5.4" stroke="#DF4601" stroke-width="1" fill="none"/></svg>
+      <span class="brand-word">Baltimore Reference<small>The Orioles dynasty, season by season</small></span>
+    </a>
+    <div class="search" role="search">
+      <input id="q" type="search" placeholder="Search players, seasons, teams" aria-keyshortcuts="/" title="Press / to search" autocomplete="off" aria-label="Search players, seasons and teams">
+      <div id="qres" class="search-results" hidden></div>
+    </div>
+    <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch color theme">Dark mode</button>
+    <button id="menuBtn" class="theme-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+  <nav class="nav" aria-label="Sections">
+    <div class="nav-inner" id="nav">
+      <a href="#/" data-r="home">Home</a>
+      <a href="#/seasons" data-r="seasons">Seasons</a>
+      <a href="#/players" data-r="players">Players</a>
+      <a href="#/compare" data-r="compare">Compare</a>
+      <a href="#/leaders" data-r="leaders">Leaders</a>
+      <a href="#/analytics" data-r="analytics">Analytics</a>
+      <a href="#/projections" data-r="projections">Projections</a>
+      <a href="#/timeline" data-r="timeline">Timeline</a>
+      <a href="#/league" data-r="league">League</a>
+      <a href="#/hof" data-r="hof">Hall of Fame</a>
+      <a href="#/trivia" data-r="trivia">Trivia</a>
+      <a href="#/glossary" data-r="glossary">Glossary</a>
+    </div>
+  </nav>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer><div class="foot-inner"><span>Baltimore Reference is built from the MLB The Show dynasty database. Stats cover tracked seasons unless marked as career (Hall of Fame) figures.</span><span id="updated"></span></div></footer>
+<script>
+(function(){
+"use strict";
+const SHEET_ID="18-JSasCsqC_HYN0o8BgV3V9ydn5duE7AkDozFSmIxXo";
+const SERVER="Google Sheets";
+const RANGES={seasons:"Seasons!A1:L500",roster:"Roster!A1:V4000",players:"Players!A1:AA2000",finalists:"'Award Finalists'!A1:U3000",votes:"'Award Votes'!A1:E3000",playoffs:"Playoffs!A1:M2000",club:"'99 Club'!A1:E2000"};
+const REQUIRED=["seasons","roster","players"];
+const LABELS={seasons:"Seasons",roster:"Roster",players:"Players",finalists:"Award Finalists",votes:"Award Votes",playoffs:"Playoffs",club:"99 Club"};
+const app=document.getElementById("app");
+let DB=null, MCP=null, SOURCE=null, lastUpdated=null, warnings=[];
+const PUBLIC_TABS={seasons:"Seasons",roster:"Roster",players:"Players",finalists:"Award Finalists",votes:"Award Votes",playoffs:"Playoffs",club:"99 Club"};
+
+/* ---------- utils ---------- */
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isNum=v=>typeof v==="number"&&isFinite(v);
+const sum=a=>a.reduce((s,v)=>s+(isNum(v)?v:0),0);
+const mean=a=>{const b=a.filter(isNum);return b.length?b.reduce((s,v)=>s+v,0)/b.length:null};
+const maxBy=(a,f)=>a.reduce((m,x)=>(m==null||f(x)>f(m))?x:m,null);
+const uniq=a=>[...new Set(a)];
+const by=(f,dir=1)=>(a,b)=>{const x=f(a),y=f(b);if(x==null&&y==null)return 0;if(x==null)return 1;if(y==null)return -1;return (x<y?-1:x>y?1:0)*dir};
+const fAvg=v=>isNum(v)?(v>=1?v.toFixed(3):v.toFixed(3).replace(/^0/,"")):"";
+const fEra=v=>isNum(v)?v.toFixed(2):"";
+const fInt=v=>isNum(v)?String(Math.round(v)):"";
+const fOne=v=>isNum(v)?v.toFixed(1):"";
+const fPct=v=>isNum(v)?v.toFixed(3).replace(/^0/,""):"";
+const ord=n=>{const s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])};
+const plink=(pid,name)=>`<a href="#/player/${esc(pid)}">${esc(name)}</a>`;
+const ylink=y=>`<a href="#/season/${y}">${y}</a>`;
+const norm=h=>String(h||"").toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,"");
+function pv(s){
+  if(s==null)return null; if(typeof s!=="string")return s;
+  const t=s.trim(); if(t==="")return null;
+  if(t==="TRUE")return true; if(t==="FALSE")return false;
+  if(/^-?(\d+\.?\d*|\.\d+)$/.test(t))return Number(t);
+  if(/^-?\d{1,3}(,\d{3})+(\.\d+)?$/.test(t))return Number(t.replace(/,/g,""));
+  return t;
+}
+function parseSheet(values){
+  if(!Array.isArray(values)||!values.length)return [];
+  const H=values[0].map(norm);
+  return values.slice(1).map(r=>{const o={};H.forEach((h,i)=>{if(h)o[h]=pv(r[i])});return o});
+}
+const TEAM_ABBR={"Arizona Diamondbacks":"ARI","Atlanta Braves":"ATL","Baltimore Orioles":"BAL","Boston Red Sox":"BOS","Chicago Cubs":"CHC","Chicago White Sox":"CWS","Cincinnati Reds":"CIN","Cleveland Guardians":"CLE","Colorado Rockies":"COL","Detroit Tigers":"DET","Houston Astros":"HOU","Kansas City Royals":"KC","Los Angeles Angels":"LAA","Los Angeles Dodgers":"LAD","Miami Marlins":"MIA","Milwaukee Brewers":"MIL","Minnesota Twins":"MIN","New York Mets":"NYM","New York Yankees":"NYY","Oakland Athletics":"OAK","Athletics":"ATH","Philadelphia Phillies":"PHI","Pittsburgh Pirates":"PIT","San Diego Padres":"SD","San Francisco Giants":"SF","Seattle Mariners":"SEA","St. Louis Cardinals":"STL","Tampa Bay Rays":"TB","Texas Rangers":"TEX","Toronto Blue Jays":"TOR","Washington Nationals":"WSH"};
+const abbr=t=>TEAM_ABBR[t]||String(t||"").split(/\s+/).map(w=>w[0]).join("").toUpperCase();
+const teamSlug=t=>encodeURIComponent(t);
+
+/* ---------- loading ---------- */
+function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
+function parseCSV(text){
+  const rows=[];let row=[],f="",q=false;
+  for(let i=0;i<text.length;i++){const c=text[i];
+    if(q){if(c==='"'){if(text[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;
+    else if(c===","){row.push(f);f=""}
+    else if(c==="\n"||c==="\r"){if(c==="\r"&&text[i+1]==="\n")i++;row.push(f);rows.push(row);row=[];f=""}
+    else f+=c}
+  if(f!==""||row.length){row.push(f);rows.push(row)}
+  return rows.filter(r=>r.some(v=>v!==""));
+}
+async function fetchPublic(key,refresh){
+  const url=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(PUBLIC_TABS[key])}${refresh?"&_="+Date.now():""}`;
+  let res;
+  try{res=await fetch(url,{cache:refresh?"no-store":"default",credentials:"omit"})}
+  catch(e){throw {code:"public_blocked",message:String(e&&e.message||e)}}
+  if(!res.ok)throw {code:"public_http",message:"HTTP "+res.status};
+  const txt=await res.text();
+  if(/^\s*<(!doctype|html)/i.test(txt))throw {code:"public_blocked",message:"The sheet returned a sign-in page"};
+  return {values:parseCSV(txt),stamp:Date.now()};
+}
+async function fetchRange(key,refresh){
+  if(SOURCE==="public")return fetchPublic(key,refresh);
+  const input={spreadsheetId:SHEET_ID,range:RANGES[key]};
+  const opts={cache:refresh?{refresh:true,gcTime:86400000}:{staleTime:120000,gcTime:86400000}};
+  let attempt=0;
+  while(true){
+    try{
+      const res=await MCP.callTool(SERVER,"get_values",input,opts);
+      const p=res&&res.payload;
+      const values=p&&Array.isArray(p.values)?p.values:[];
+      const stamp=res&&res.cache&&res.cache.storedAt?res.cache.storedAt:Date.now();
+      return {values,stamp};
+    }catch(e){
+      if(e&&e.retryable&&attempt===0){attempt++;await sleep((e.retryAfterMs||0)+600+Math.random()*900);continue}
+      throw e;
+    }
+  }
+}
+async function loadAll(refresh){
+  warnings=[];
+  const keys=Object.keys(RANGES);
+  const results=await Promise.allSettled(keys.map(k=>fetchRange(k,refresh)));
+  const raw={}; let firstErr=null; const stamps=[];
+  results.forEach((r,i)=>{
+    const k=keys[i];
+    if(r.status==="fulfilled"){raw[k]=parseSheet(r.value.values);stamps.push(r.value.stamp)}
+    else{
+      raw[k]=[];
+      if(REQUIRED.includes(k)){if(!firstErr)firstErr=r.reason}
+      else warnings.push(`The ${LABELS[k]} tab didn't load (${(r.reason&&r.reason.code)||"error"}), so those sections are empty.`);
+    }
+  });
+  if(firstErr)throw firstErr;
+  lastUpdated=stamps.length?Math.min(...stamps):Date.now();
+  return raw;
+}
+
+/* ---------- model ---------- */
+function build(raw){
+  const seasons=raw.seasons.filter(r=>isNum(r.season_year)).map(r=>({y:r.season_year,team:r.team,w:r.wins,l:r.losses,div:r.division,fin:r.division_finish,title:r.division_title===true,gb:r.games_back,mgr:r.manager,sum:r.season_summary})).sort(by(s=>s.y));
+  const TEAM=seasons.length?seasons[seasons.length-1].team:"Baltimore Orioles";
+  const players=raw.players.filter(r=>r.player_id).map(r=>({pid:String(r.player_id),name:String(r.name||r.player_id),ppos:r.primary_position,throws:r.throws,jersey:r.jersey,hof:r.hall_of_fame===true,hofH:r.career_h_hof,hofHR:r.career_hr_hof,hofAVG:r.career_avg_hof,hofOBP:r.career_obp_hof,hofSLG:r.career_slg_hof}));
+  const P={}; players.forEach(p=>P[p.pid]=p);
+  const roster=raw.roster.filter(r=>r.player_id&&isNum(r.season_year)).map(r=>({y:r.season_year,pid:String(r.player_id),name:r.name||(P[r.player_id]&&P[r.player_id].name)||r.player_id,role:r.role,slot:r.slot,pos:r.position,age:r.age,ovr:r.overall,era:r.era,w:r.w,l:r.l,sv:r.saves,hld:r.holds,k:r.k,hr:r.hr,avg:r.avg,obp:r.obp,slg:r.slg,rookie:r.rookie===true,as:r.all_star===true}));
+  roster.forEach(r=>{if(!P[r.pid]){const p={pid:r.pid,name:r.name,ppos:r.pos,hof:false};players.push(p);P[r.pid]=p}});
+  const finalists=raw.finalists.filter(r=>isNum(r.season_year)&&r.player).map(r=>({y:r.season_year,award:r.award,lg:r.league,rank:r.rank,winner:r.winner===true||r.rank===1,name:r.player,team:r.team,type:r.player_type,pos:r.position,age:r.age,ovr:r.overall,hr:r.hr,avg:r.avg,obp:r.obp,slg:r.slg,era:r.era,w:r.w,l:r.l,sv:r.saves,k:r.k}));
+  const votes=raw.votes.filter(r=>isNum(r.season_year)&&r.player_id).map(r=>({y:r.season_year,pid:String(r.player_id),award:r.award,fin:r.award_finalist===true}));
+  const playoffs=raw.playoffs.filter(r=>isNum(r.season_year)&&r.team_a).map(r=>{
+    const o={y:r.season_year,round:r.round,lg:r.league,ta:r.team_a,tb:r.team_b,ra:r.team_a_record,rb:r.team_b_record,wa:r.wins_a,wb:r.wins_b,winner:r.winner};
+    if(!o.winner&&isNum(o.wa)&&isNum(o.wb))o.winner=o.wa>o.wb?o.ta:o.tb;
+    o.loser=o.winner===o.ta?o.tb:o.winner===o.tb?o.ta:null;
+    o.score=isNum(o.wa)&&isNum(o.wb)?`${Math.max(o.wa,o.wb)}–${Math.min(o.wa,o.wb)}`:"";
+    return o});
+  const club=raw.club.filter(r=>isNum(r.season_year)&&r.player).map(r=>({y:r.season_year,name:r.player,pos:r.position,team:r.team}));
+  const years=uniq(seasons.map(s=>s.y).concat(roster.map(r=>r.y))).sort((a,b)=>a-b);
+  const S={}; seasons.forEach(s=>S[s.y]=s);
+  years.forEach(y=>{if(!S[y]){S[y]={y,team:TEAM};seasons.push(S[y])}});
+  seasons.sort(by(s=>s.y));
+  const isHit=r=>r.role==="Lineup"||r.role==="Bench";
+  const isPit=r=>r.role==="SP"||r.role==="RP";
+  const byYear={}; years.forEach(y=>byYear[y]=[]); roster.forEach(r=>byYear[r.y].push(r));
+  const T={};
+  years.forEach(y=>{
+    const rows=byYear[y]; const lu=rows.filter(r=>r.role==="Lineup");
+    const hit=rows.filter(isHit); const pit=rows.filter(isPit);
+    const rot=rows.filter(r=>r.role==="SP"); const pen=rows.filter(r=>r.role==="RP");
+    const t={y,
+      opsAvg:mean(lu.filter(r=>isNum(r.obp)&&isNum(r.slg)).map(r=>r.obp+r.slg)),
+      eraAvg:mean(pit.map(r=>r.era).filter(v=>isNum(v)&&v>0)),
+      hr:sum(hit.map(r=>r.hr)), avgLu:mean(lu.map(r=>r.avg)), obpLu:mean(lu.map(r=>r.obp)), slgLu:mean(lu.map(r=>r.slg)),
+      ovrLu:mean(lu.map(r=>r.ovr)), ovrRot:mean(rot.map(r=>r.ovr)), ovrPen:mean(pen.map(r=>r.ovr)), ovrAll:mean(rows.map(r=>r.ovr)),
+      ageLu:mean(lu.map(r=>r.age)), ageRot:mean(rot.map(r=>r.age)), agePen:mean(pen.map(r=>r.age)), ageAll:mean(rows.map(r=>r.age)),
+      rotEra:mean(rot.map(r=>r.era)), penEra:mean(pen.map(r=>r.era)), k:sum(pit.map(r=>r.k)), sv:sum(pit.map(r=>r.sv)),
+      as:rows.filter(r=>r.as).length, rookies:rows.filter(r=>r.rookie).length, n:rows.length, n99:rows.filter(r=>isNum(r.ovr)&&r.ovr>=99).length};
+    const prev=byYear[y-1];
+    if(prev&&prev.length){const prevIds=new Set(prev.map(r=>r.pid));t.returning=rows.filter(r=>prevIds.has(r.pid)).length;t.retPct=rows.length?t.returning/rows.length:null}
+    T[y]=t;
+  });
+  roster.forEach(r=>{
+    r.hit=isHit(r); r.pit=isPit(r);
+    if(isNum(r.obp)&&isNum(r.slg))r.ops=r.obp+r.slg;
+    if(isNum(r.slg)&&isNum(r.avg))r.iso=r.slg-r.avg;
+    const t=T[r.y];
+    if(isNum(r.ops)&&t&&t.opsAvg)r.opsPlus=Math.round(100*r.ops/t.opsAvg);
+    if(isNum(r.era)&&r.era>0&&t&&t.eraAvg)r.eraPlus=Math.round(100*t.eraAvg/r.era);
+    if(isNum(r.w)&&isNum(r.l)&&r.w+r.l>0)r.wpct=r.w/(r.w+r.l);
+    r.is99=isNum(r.ovr)&&r.ovr>=99;
+  });
+  /* season results */
+  seasons.forEach(s=>{
+    const ps=playoffs.filter(p=>p.y===s.y);
+    const ws=ps.find(p=>p.round==="World Series");
+    const lcs=ps.find(p=>p.round!=="World Series"&&(p.ta===TEAM||p.tb===TEAM));
+    s.ws=ws||null;
+    if(ws&&ws.winner===TEAM){s.res="champ";s.resLabel="Won World Series"}
+    else if(ws&&(ws.ta===TEAM||ws.tb===TEAM)){s.res="pennant";s.resLabel="Lost World Series"}
+    else if(lcs){s.res="lcs";s.resLabel=`Lost ${lcs.lg||""}CS`.replace("ALCS","ALCS")}
+    else if(s.title){s.res="div";s.resLabel="Won division"}
+    else{s.res="miss";s.resLabel=s.fin?`${ord(s.fin)} in division`:"—"}
+    if(s.res==="lcs")s.resLabel=`Lost ${lcs.lg==="NL"?"NLCS":"ALCS"}`;
+    if(isNum(s.w)&&isNum(s.l))s.pct=s.w/(s.w+s.l);
+    s.champ=ws?ws.winner:null;
+  });
+  /* votes per player */
+  const votesBy={}; votes.forEach(v=>(votesBy[v.pid]=votesBy[v.pid]||[]).push(v));
+  const nameToPid={}; players.forEach(p=>{nameToPid[p.name]=nameToPid[p.name]||p.pid});
+  const champYears=new Set(seasons.filter(s=>s.res==="champ").map(s=>s.y));
+  const pennantYears=new Set(seasons.filter(s=>s.res==="champ"||s.res==="pennant").map(s=>s.y));
+  players.forEach(p=>{
+    const rows=roster.filter(r=>r.pid===p.pid).sort(by(r=>r.y));
+    p.rows=rows; p.years=rows.map(r=>r.y);
+    p.first=rows.length?rows[0].y:null; p.last=rows.length?rows[rows.length-1].y:null; p.seasons=uniq(p.years).length;
+    p.hitRows=rows.filter(r=>r.hit); p.pitRows=rows.filter(r=>r.pit);
+    p.type=p.pitRows.length>p.hitRows.length?"P":(p.hitRows.length?"H":(/^(SP|RP|LR|MR|SU|CP)$/.test(p.ppos||"")?"P":"H"));
+    p.pos=p.type==="P"?(p.pitRows.length?(maxBy(Object.entries(p.pitRows.reduce((m,r)=>{m[r.pos]=(m[r.pos]||0)+1;return m},{})),e=>e[1])||[p.ppos])[0]:p.ppos):(p.hitRows.length?(maxBy(Object.entries(p.hitRows.reduce((m,r)=>{m[r.pos]=(m[r.pos]||0)+1;return m},{})),e=>e[1])||[p.ppos])[0]:p.ppos);
+    p.peak=rows.length?Math.max(...rows.map(r=>isNum(r.ovr)?r.ovr:0)):null;
+    p.avgOvr=mean(rows.map(r=>r.ovr));
+    p.as=rows.filter(r=>r.as).length; p.n99=rows.filter(r=>r.is99).length;
+    p.votes=(votesBy[p.pid]||[]).sort(by(v=>v.y)); p.nVotes=p.votes.length;
+    p.rings=rows.filter(r=>champYears.has(r.y)).length; p.ringYears=rows.filter(r=>champYears.has(r.y)).map(r=>r.y);
+    p.pennants=rows.filter(r=>pennantYears.has(r.y)).length;
+    p.rookieYear=(rows.find(r=>r.rookie)||{}).y||null;
+    p.ages=rows.map(r=>r.age).filter(isNum);
+    p.fin=finalists.filter(f=>f.name===p.name&&f.team===TEAM&&p.years.includes(f.y));
+    p.won=p.fin.filter(f=>f.winner);
+    p.alumni=finalists.filter(f=>f.name===p.name&&f.team!==TEAM).concat(club.filter(c=>c.name===p.name&&c.team!==TEAM).map(c=>Object.assign({award:"99 Club"},c)));
+    p.club=club.filter(c=>c.name===p.name&&c.team===TEAM);
+    const h=p.hitRows;
+    p.HR=h.length?sum(h.map(r=>r.hr)):null; p.AVG=mean(h.map(r=>r.avg)); p.OBP=mean(h.map(r=>r.obp)); p.SLG=mean(h.map(r=>r.slg));
+    p.OPS=mean(h.map(r=>r.ops)); p.OPSp=mean(h.map(r=>r.opsPlus)); p.ISO=mean(h.map(r=>r.iso));
+    p.bestHR=h.length?Math.max(...h.map(r=>isNum(r.hr)?r.hr:0)):null;
+    const q=p.pitRows;
+    const qe=q.filter(r=>isNum(r.era));
+    p.W=q.length?sum(q.map(r=>r.w)):null; p.L=q.length?sum(q.map(r=>r.l)):null; p.SV=q.length?sum(q.map(r=>r.sv)):null; p.HLD=q.length?sum(q.map(r=>r.hld)):null;
+    p.K=q.length?sum(q.map(r=>r.k)):null; p.ERA=mean(qe.map(r=>r.era)); p.ERAp=mean(q.map(r=>r.eraPlus));
+    p.legacy=Math.round(p.seasons*1+p.as*4+p.nVotes*3+p.n99*3+p.rings*2+p.won.length*8+(p.fin.length-p.won.length)*3+(p.hof?10:0));
+  });
+  /* similarity */
+  const vec=p=>p.type==="H"?[p.peak||0,p.avgOvr||0,(p.HR||0)/Math.max(1,p.hitRows.length),(p.OPS||0)*100,p.seasons*2,(p.OPSp||100)/2]:[p.peak||0,p.avgOvr||0,(p.ERA||4)*10,(p.K||0)/Math.max(1,p.pitRows.length)/5,(p.SV||0)/Math.max(1,p.pitRows.length),p.seasons*2];
+  players.forEach(p=>{if(!p.rows.length){p.similar=[];return}
+    const v=vec(p);
+    p.similar=players.filter(o=>o!==p&&o.type===p.type&&o.rows.length).map(o=>{const w=vec(o);const d=Math.sqrt(v.reduce((s,x,i)=>s+(x-w[i])**2,0));return {p:o,score:Math.max(0,Math.round(1000-d*12))}}).sort(by(x=>x.score,-1)).slice(0,5)});
+  /* teammates */
+  return {TEAM,seasons,S,players,P,roster,byYear,T,finalists,votes,playoffs,club,years,nameToPid,champYears,isHit,isPit};
+}
+/* ---------- sortable tables ---------- */
+const TABLES={}; let tid=0;
+function table(cols,rows,opts={}){
+  const id="t"+(++tid);
+  TABLES[id]={cols,rows:rows.slice(),opts,sk:opts.sort||null,dir:opts.dir||-1};
+  if(TABLES[id].sk)sortRows(TABLES[id]);
+  return `<div class="tw"><table class="st" id="${id}">${thead(id)}<tbody>${tbody(id)}</tbody>${opts.foot?`<tfoot>${opts.foot}</tfoot>`:""}</table></div>${opts.note?`<div class="tnote">${opts.note}</div>`:""}`;
+}
+function thead(id){const t=TABLES[id];return `<thead><tr>${t.cols.map(c=>{const sortable=t.opts.sortable!==false&&c.sort!==false;const cls=[c.t?"t":"",sortable?"sortable":"",t.sk===c.k?"sorted "+(t.dir>0?"asc":"desc"):""].join(" ");return `<th class="${cls}" data-tid="${id}" data-k="${esc(c.k)}" ${c.title?`title="${esc(c.title)}"`:""} ${sortable?'tabindex="0" aria-sort="'+(t.sk===c.k?(t.dir>0?"ascending":"descending"):"none")+'"':""}>${c.label}</th>`}).join("")}</tr></thead>`}
+function cellVal(c,r){return c.v?c.v(r):r[c.k]}
+function tbody(id){const t=TABLES[id];
+  const lead={};
+  if(t.opts.leaders){t.cols.forEach(c=>{if(!c.lead)return;const vals=t.rows.map(r=>cellVal(c,r)).filter(isNum);if(vals.length>1&&new Set(vals).size>1)lead[c.k]=c.lead==="min"?Math.min(...vals):Math.max(...vals)})}
+  return t.rows.map(r=>`<tr class="${t.opts.rowClass?t.opts.rowClass(r):""}">${t.cols.map(c=>{const v=cellVal(c,r);const isLead=lead[c.k]!=null&&v===lead[c.k];return `<td class="${c.t?"t":""}${isLead?" lead":""}">${c.f?c.f(v,r):(v==null?"":esc(v))}</td>`}).join("")}</tr>`).join("")}
+function sortRows(t){const c=t.cols.find(c=>c.k===t.sk);if(!c)return;t.rows.sort(by(r=>{const v=cellVal(c,r);return typeof v==="string"?v.toLowerCase():v},t.dir))}
+function onSort(th){const id=th.dataset.tid,k=th.dataset.k,t=TABLES[id];if(!t)return;
+  if(t.sk===k)t.dir=-t.dir;else{t.sk=k;const c=t.cols.find(c=>c.k===k);t.dir=c&&c.t?1:(c&&c.asc?1:-1)}
+  sortRows(t);const el=document.getElementById(id);if(!el)return;el.querySelector("thead").outerHTML=thead(id);el.querySelector("tbody").innerHTML=tbody(id)}
+document.addEventListener("click",e=>{const th=e.target.closest("th.sortable");if(th)onSort(th)});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("th.sortable")){e.preventDefault();onSort(e.target)}});
+
+/* ---------- charts (SVG) ---------- */
+const PAL=["var(--orange)","var(--navy-2)","var(--gold)","var(--good)","var(--bad)","var(--muted)"];
+function niceTicks(min,max,n=5){if(min===max){min-=1;max+=1}const span=max-min;const step0=span/n;const mag=Math.pow(10,Math.floor(Math.log10(step0)));const step=[1,2,2.5,5,10].map(m=>m*mag).find(s=>s>=step0)||mag*10;const lo=Math.floor(min/step)*step,hi=Math.ceil(max/step)*step;const t=[];for(let v=lo;v<=hi+1e-9;v+=step)t.push(+v.toFixed(6));return {lo,hi,t}}
+function lineChart(o){
+  const W=640,H=o.h||250,L=40,R=14,Tp=12,B=30;
+  const pts=o.series.flatMap(s=>s.points).filter(p=>isNum(p.x)&&isNum(p.y));
+  if(!pts.length)return `<p class="muted small">Not enough data for this chart yet.</p>`;
+  let xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
+  let xmin=o.xmin!=null?o.xmin:Math.min(...xs),xmax=o.xmax!=null?o.xmax:Math.max(...xs);if(xmin===xmax){xmin-=1;xmax+=1}
+  const yt=niceTicks(o.ymin!=null?o.ymin:Math.min(...ys),o.ymax!=null?o.ymax:Math.max(...ys),o.yn||5);
+  const X=x=>L+(x-xmin)/(xmax-xmin)*(W-L-R),Y=y=>Tp+(1-(y-yt.lo)/(yt.hi-yt.lo))*(H-Tp-B);
+  const xt=o.xticks||(()=>{const a=[];const step=Math.max(1,Math.ceil((xmax-xmin)/10));for(let v=Math.ceil(xmin);v<=xmax;v+=step)a.push(v);return a})();
+  const cid="c"+(++tid);let g=`<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||"chart")}"><defs><clipPath id="${cid}"><rect x="${L-6}" y="${Tp-6}" width="${W-L-R+12}" height="${H-Tp-B+12}"/></clipPath></defs>`;
+  yt.t.forEach(v=>{g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${o.yfmt?o.yfmt(v):v}</text>`});
+  xt.forEach(v=>{g+=`<text x="${X(v)}" y="${H-10}" text-anchor="middle">${o.xfmt?o.xfmt(v):v}</text>`});
+  (o.bands||[]).forEach(b=>{g+=`<rect x="${X(b.x)-((W-L-R)/(xmax-xmin+1))/2}" y="${Tp}" width="${(W-L-R)/(xmax-xmin+1)}" height="${H-Tp-B}" fill="${b.color}" opacity=".13"/>`});
+  if(o.ref!=null)g+=`<line x1="${L}" x2="${W-R}" y1="${Y(o.ref)}" y2="${Y(o.ref)}" stroke="var(--muted)" stroke-dasharray="5 4"/>`;
+  g+=`<line class="axis" x1="${L}" x2="${W-R}" y1="${H-B}" y2="${H-B}"/>`;
+  g+=`<g clip-path="url(#${cid})">`;
+  o.series.forEach((s,i)=>{const c=s.color||PAL[i%PAL.length];const p=s.points.filter(p=>isNum(p.x)&&isNum(p.y)&&p.x>=xmin-0.5&&p.x<=xmax+0.5).sort(by(p=>p.x));if(!p.length)return;
+    if(p.length>1)g+=`<polyline fill="none" stroke="${c}" stroke-width="${s.w||2.4}" ${s.dash?`stroke-dasharray="${s.dash}"`:""} stroke-linejoin="round" points="${p.map(q=>X(q.x)+","+Y(q.y)).join(" ")}"/>`;
+    if(!s.noDots)p.forEach(q=>{const big=q.mark==="star"||q.mark==="gold";g+=`<circle cx="${X(q.x)}" cy="${Y(q.y)}" r="${big?5:3.4}" fill="${q.mark==="gold"?"var(--gold)":q.mark==="star"?"var(--panel)":c}" stroke="${c}" stroke-width="${big?2.2:1}"><title>${esc(q.tip||(s.name+": "+q.y))}</title></circle>`})});
+  return g+"</g></svg>";
+}
+function barChart(o){
+  const W=640,H=o.h||230,L=40,R=10,Tp=14,B=34;
+  const bars=o.bars.filter(b=>isNum(b.v));if(!bars.length)return `<p class="muted small">Not enough data for this chart yet.</p>`;
+  const yt=niceTicks(o.ymin!=null?o.ymin:Math.min(0,...bars.map(b=>b.v)),o.ymax!=null?o.ymax:Math.max(...bars.map(b=>b.v)),o.yn||5);
+  const Y=y=>Tp+(1-(y-yt.lo)/(yt.hi-yt.lo))*(H-Tp-B);const bw=(W-L-R)/o.bars.length;
+  let g=`<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||"chart")}">`;
+  yt.t.forEach(v=>{g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${o.yfmt?o.yfmt(v):v}</text>`});
+  o.bars.forEach((b,i)=>{const x=L+i*bw+bw*.15,w=bw*.7;if(isNum(b.v)){const y0=Y(Math.max(yt.lo,0)),y1=Y(b.v);g+=`<rect x="${x}" y="${Math.min(y0,y1)}" width="${w}" height="${Math.max(1,Math.abs(y0-y1))}" fill="${b.color||"var(--navy-2)"}" rx="1"><title>${esc(b.tip||(b.label+": "+b.v))}</title></rect>`;if(o.values)g+=`<text x="${x+w/2}" y="${Math.min(y0,y1)-4}" text-anchor="middle" style="fill:var(--ink);font-weight:600">${o.vfmt?o.vfmt(b.v):b.v}</text>`}
+    g+=`<text x="${x+w/2}" y="${H-14}" text-anchor="middle">${esc(b.label)}</text>${b.sub?`<text x="${x+w/2}" y="${H-2}" text-anchor="middle">${esc(b.sub)}</text>`:""}`});
+  return g+`<line class="axis" x1="${L}" x2="${W-R}" y1="${Y(Math.max(yt.lo,0))}" y2="${Y(Math.max(yt.lo,0))}"/></svg>`;
+}
+function scatter(o){
+  const W=640,H=o.h||260,L=44,R=14,Tp=12,B=36;const pts=o.points.filter(p=>isNum(p.x)&&isNum(p.y));if(pts.length<2)return `<p class="muted small">Not enough data for this chart yet.</p>`;
+  const xt=niceTicks(Math.min(...pts.map(p=>p.x)),Math.max(...pts.map(p=>p.x)),5),yt=niceTicks(Math.min(...pts.map(p=>p.y)),Math.max(...pts.map(p=>p.y)),5);
+  const X=x=>L+(x-xt.lo)/(xt.hi-xt.lo)*(W-L-R),Y=y=>Tp+(1-(y-yt.lo)/(yt.hi-yt.lo))*(H-Tp-B);
+  let g=`<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||"scatter chart")}">`;
+  yt.t.forEach(v=>{g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${v}</text>`});
+  xt.t.forEach(v=>{g+=`<text x="${X(v)}" y="${H-18}" text-anchor="middle">${o.xfmt?o.xfmt(v):v}</text>`});
+  g+=`<text x="${(W+L)/2}" y="${H-2}" text-anchor="middle">${esc(o.xl||"")}</text><text x="12" y="${Tp+(H-Tp-B)/2}" transform="rotate(-90 12 ${Tp+(H-Tp-B)/2})" text-anchor="middle">${esc(o.yl||"")}</text>`;
+  const n=pts.length,mx=mean(pts.map(p=>p.x)),my=mean(pts.map(p=>p.y));const sxy=sum(pts.map(p=>(p.x-mx)*(p.y-my))),sxx=sum(pts.map(p=>(p.x-mx)**2)),syy=sum(pts.map(p=>(p.y-my)**2));
+  if(sxx>0){const b=sxy/sxx,a=my-b*mx;g+=`<line x1="${X(xt.lo)}" x2="${X(xt.hi)}" y1="${Y(a+b*xt.lo)}" y2="${Y(a+b*xt.hi)}" stroke="var(--muted)" stroke-dasharray="5 4"/>`}
+  pts.forEach(p=>{g+=`<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="6" fill="${p.color||"var(--navy-2)"}" stroke="var(--panel)" stroke-width="1.5"><title>${esc(p.tip||"")}</title></circle>${p.label?`<text x="${X(p.x)+8}" y="${Y(p.y)+4}">${esc(p.label)}</text>`:""}`});
+  const r=sxx>0&&syy>0?sxy/Math.sqrt(sxx*syy):null;
+  return {svg:g+"</svg>",r};
+}
+const fig=(title,body,cap,keys)=>`<figure class="chart"><div class="ctitle">${title}</div>${keys?`<div class="keys">${keys.map(k=>`<span><i style="background:${k[1]}"></i>${esc(k[0])}</span>`).join("")}</div>`:""}${body}${cap?`<figcaption>${cap}</figcaption>`:""}</figure>`;
+
+/* ---------- shared bits ---------- */
+function tags(r){let s="";if(r.as)s+=`<span class="tag as" title="All-Star">AS</span>`;if(r.rookie)s+=`<span class="tag r" title="Rookie">R</span>`;if(r.is99)s+=`<span class="tag n99" title="99 overall">99</span>`;
+  const v=DB.votes.filter(v=>v.pid===r.pid&&v.y===r.y);v.forEach(x=>{s+=`<span class="tag v" title="Top 10 in ${esc(x.award)} voting">${x.award==="MVP"?"MVP":x.award==="Cy Young"?"CY":"RoY"}</span>`});return s}
+function nameCell(r){const p=DB.P[r.pid];return plink(r.pid,r.name)+(p&&p.hof?`<span class="tag hof" title="Orioles Hall of Fame">HOF</span>`:"")+tags(r)}
+function resultBadge(s){const m={champ:"o",pennant:"g",lcs:"n",div:"n",miss:""};return `<span class="bdg ${m[s.res]||""}">${esc(s.resLabel)}</span>`}
+const trophy=`<svg class="trophy" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h12v2h3v3a5 5 0 0 1-4.6 5 6 6 0 0 1-3.4 3.7V18h3v2H8v-2h3v-2.3A6 6 0 0 1 7.6 12 5 5 0 0 1 3 7V4h3V2zm-1 4v1a3 3 0 0 0 2 2.8V6H5zm14 0h-2v3.8A3 3 0 0 0 19 7V6z"/></svg>`;
+function seasonStrip(p){return `<div class="strip" aria-label="Seasons with the team">${DB.years.map(y=>{const on=p.years.includes(y);const ch=DB.champYears.has(y);return `<a href="#/season/${y}" class="${on?"on":""} ${on&&ch?"champ":""}" title="${y}${on?" on roster":""}${ch?" (World Series champions)":""}">${String(y).slice(2)}</a>`}).join("")}</div>`}
+function teamName(t){return t===DB.TEAM?`<b>${esc(t)}</b>`:esc(t)}
+
+/* ---------- search ---------- */
+const qEl=document.getElementById("q"),qRes=document.getElementById("qres");let qSel=0,qItems=[];
+function searchItems(q){q=q.trim().toLowerCase();if(!q||!DB)return [];
+  const out=[];DB.players.forEach(p=>{if(p.name.toLowerCase().includes(q))out.push({href:`#/player/${p.pid}`,label:p.name,kind:p.rows.length?`${p.pos||""} ${p.first}–${p.last}`:"Hall of Fame"})});
+  DB.years.forEach(y=>{if(String(y).includes(q))out.push({href:`#/season/${y}`,label:`${y} ${DB.TEAM}`,kind:"Season"})});
+  const teams=uniq(DB.finalists.map(f=>f.team).concat(DB.playoffs.flatMap(p=>[p.ta,p.tb]),DB.club.map(c=>c.team))).filter(Boolean);
+  teams.forEach(t=>{if(t.toLowerCase().includes(q)||abbr(t).toLowerCase()===q)out.push({href:`#/team/${teamSlug(t)}`,label:t,kind:"Team"})});
+  return out.slice(0,12)}
+function drawSearch(){if(!qItems.length){qRes.hidden=true;return}qRes.hidden=false;qRes.innerHTML=qItems.map((it,i)=>`<a href="${it.href}" class="${i===qSel?"active":""}"><span>${esc(it.label)}</span><span class="kind">${esc(it.kind)}</span></a>`).join("")}
+qEl.addEventListener("input",()=>{qItems=searchItems(qEl.value);qSel=0;drawSearch()});
+qEl.addEventListener("keydown",e=>{if(e.key==="ArrowDown"){qSel=Math.min(qSel+1,qItems.length-1);drawSearch();e.preventDefault()}else if(e.key==="ArrowUp"){qSel=Math.max(qSel-1,0);drawSearch();e.preventDefault()}else if(e.key==="Enter"&&qItems[qSel]){location.hash=qItems[qSel].href;qEl.value="";qItems=[];drawSearch()}else if(e.key==="Escape"){qItems=[];drawSearch()}});
+document.addEventListener("click",e=>{if(!e.target.closest(".search")){qItems=[];drawSearch()}else if(e.target.closest(".search-results a")){qEl.value="";qItems=[];drawSearch()}});
+
+/* ---------- theme ---------- */
+const themeBtn=document.getElementById("themeBtn");
+function curTheme(){const a=document.documentElement.getAttribute("data-theme");if(a)return a;return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}
+function setThemeLabel(){themeBtn.textContent=curTheme()==="dark"?"Light mode":"Dark mode"}
+try{const t=localStorage.getItem("bref-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}
+setThemeLabel();
+themeBtn.addEventListener("click",()=>{const n=curTheme()==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",n);try{localStorage.setItem("bref-theme",n)}catch(e){}setThemeLabel()});
+/* ---------- views: home ---------- */
+function vHome(){
+  const S=DB.seasons.filter(s=>isNum(s.w));
+  const W=sum(S.map(s=>s.w)),L=sum(S.map(s=>s.l));
+  const titles=S.filter(s=>s.res==="champ").length,pennants=S.filter(s=>s.res==="champ"||s.res==="pennant").length,divs=S.filter(s=>s.title).length;
+  const first=DB.years[0],last=DB.years[DB.years.length-1];
+  const wall=DB.seasons.map(s=>{const cls={champ:"champ",pennant:"pennantwin",div:"div",lcs:"div",miss:"miss"}[s.res]||"miss";
+    return `<a class="pennant ${cls}" href="#/season/${s.y}" title="${s.y}: ${esc(s.resLabel)}"><span class="yr">${s.y}</span><span class="rec">${isNum(s.w)?s.w+"–"+s.l:""}</span><span class="res">${esc(s.res==="champ"?"Champions":s.res==="pennant"?"AL pennant":s.res==="lcs"?"ALCS":s.title?"AL East":s.fin?ord(s.fin)+" place":"")}</span>${s.res==="champ"?trophy:""}</a>`}).join("");
+  const rows=DB.seasons.map(s=>{const rs=DB.byYear[s.y]||[];
+    const bestH=maxBy(rs.filter(r=>r.role==="Lineup"&&isNum(r.opsPlus)),r=>r.opsPlus);
+    const ace=maxBy(rs.filter(r=>r.role==="SP"&&isNum(r.eraPlus)),r=>r.eraPlus);
+    return Object.assign({},s,{bestH,ace})});
+  const cols=[{k:"y",label:"Year",t:1,f:v=>ylink(v)},{k:"w",label:"W"},{k:"l",label:"L"},{k:"pct",label:"W-L%",f:fPct,lead:"max"},{k:"fin",label:"Finish",f:v=>v?ord(v):""},{k:"resLabel",label:"Postseason",t:1,v:r=>r.resLabel},
+    {k:"bh",label:"Top hitter (OPS+)",t:1,sort:false,f:(v,r)=>r.bestH?`${plink(r.bestH.pid,r.bestH.name)} <span class="muted">${r.bestH.opsPlus}</span>`:""},{k:"ac",label:"Ace (ERA+)",t:1,sort:false,f:(v,r)=>r.ace?`${plink(r.ace.pid,r.ace.name)} <span class="muted">${r.ace.eraPlus}</span>`:""},{k:"mgr",label:"Manager",t:1}];
+  const ps=DB.players.filter(p=>p.rows.length);
+  const lbBox=(title,arr,f)=>`<div class="lb" style="margin-bottom:12px"><h3>${title}</h3><ol>${arr.map((x,i)=>`<li><span class="rk">${i+1}</span><span class="nm">${plink(x.pid,x.name)}</span><span class="vl">${f(x)}</span></li>`).join("")}</ol></div>`;
+  const top=(f,n=5,asc)=>ps.filter(p=>isNum(f(p))&&f(p)>0).sort(by(f,asc?1:-1)).slice(0,n);
+  const latest=DB.seasons[DB.seasons.length-1];
+  const hof=DB.players.filter(p=>p.hof).sort(by(p=>p.jersey||99,1));
+  const fact=randomFact();
+  return `<div class="franchise"><div><h1>${esc(DB.TEAM)}</h1><div class="lede">${first}–${last}: ${DB.years.length} season${DB.years.length===1?"":"s"} on record, ${DB.players.filter(p=>p.rows.length).length} players, one notebook.</div></div>
+    <div class="fstats"><div class="fstat"><b>${W}–${L}</b><span>Record (${fPct(W/(W+L))})</span></div><div class="fstat"><b>${titles}</b><span>World Series titles</span></div><div class="fstat"><b>${pennants}</b><span>Pennants</span></div><div class="fstat"><b>${divs}</b><span>Division titles</span></div></div></div>
+    <div class="wall" role="list">${wall}</div>
+    <div class="legend"><span><i style="background:var(--orange)"></i>World Series champions</span><span><i style="background:#2A4570;box-shadow:inset 0 0 0 2px var(--orange)"></i>Lost World Series</span><span><i style="background:#1F5A8C"></i>Division title or ALCS</span><span><i style="background:#3A4458"></i>Missed the LCS</span></div>
+    <div class="layout"><div>
+      <h2>Season by season <span class="h-note">OPS+ and ERA+ are relative to the Orioles' own lineup and staff that year (100 = team average)</span></h2>
+      ${table(cols,rows,{sort:"y",dir:-1,leaders:true})}
+      ${latest&&latest.sum?`<h2>Latest: ${latest.y} <span class="h-note"><a href="#/season/${latest.y}">Full season page</a></span></h2><blockquote class="wrap"><p>${esc(latest.sum)}</p></blockquote>`:""}
+      ${fact?`<div class="box"><h3>Did you know?</h3><p>${fact}</p></div>`:""}
+    </div><aside>
+      ${lbBox("Home runs",top(p=>p.HR),p=>p.HR)}
+      ${lbBox("All-Star selections",top(p=>p.as),p=>p.as)}
+      ${lbBox("Saves",top(p=>p.SV),p=>p.SV)}
+      ${lbBox("Wins",top(p=>p.W),p=>p.W)}
+      ${lbBox("Legacy score",top(p=>p.legacy),p=>p.legacy)}
+      <div class="lb"><h3>Hall of Fame</h3><ol>${hof.map(p=>`<li><span class="rk">${p.jersey!=null?"#"+p.jersey:""}</span><span class="nm">${plink(p.pid,p.name)}</span><span class="vl">${esc(p.pos||p.ppos||"")}</span></li>`).join("")||`<li><span></span><span class="muted">No inductees yet</span><span></span></li>`}</ol></div>
+      <p class="small muted" style="margin-top:8px">Leaderboards count tracked seasons from ${first} on. <a href="#/leaders">All leaders</a></p>
+    </aside></div>`;
+}
+function randomFact(){
+  const facts=[];const R=DB.roster;
+  const hr=maxBy(R.filter(r=>r.hit&&isNum(r.hr)),r=>r.hr);if(hr)facts.push(`The single-season home run record from ${DB.years[0]} on belongs to ${plink(hr.pid,hr.name)}, with ${hr.hr} in ${ylink(hr.y)}.`);
+  const sv=maxBy(R.filter(r=>isNum(r.sv)),r=>r.sv);if(sv)facts.push(`${plink(sv.pid,sv.name)} saved ${sv.sv} games in ${ylink(sv.y)}, the most by any Orioles closer on record.`);
+  const young=R.filter(r=>isNum(r.age)).sort(by(r=>r.age,1))[0];if(young)facts.push(`The youngest Oriole on record is ${plink(young.pid,young.name)}, who was ${young.age} in ${ylink(young.y)}.`);
+  const old=R.filter(r=>isNum(r.age)).sort(by(r=>r.age,-1))[0];if(old)facts.push(`The oldest Oriole on record is ${plink(old.pid,old.name)}, who was ${old.age} in ${ylink(old.y)}.`);
+  const lon=DB.players.filter(p=>p.rows.length).sort(by(p=>p.seasons,-1))[0];if(lon)facts.push(`${plink(lon.pid,lon.name)} has the longest Orioles tenure on record: ${lon.seasons} seasons.`);
+  const rg=DB.players.filter(p=>p.rings>0).sort(by(p=>p.rings,-1))[0];if(rg)facts.push(`${plink(rg.pid,rg.name)} was on the roster for ${rg.rings} World Series title${rg.rings>1?"s":""} (${rg.ringYears.join(", ")}).`);
+  const al=DB.players.filter(p=>p.alumni.length);if(al.length){const a=al[Math.floor(Math.random()*al.length)];const x=a.alumni[0];facts.push(`Former Oriole ${plink(a.pid,a.name)} showed up ${x.award==="99 Club"?"in the 99 Club":"as a "+esc(x.award)+" finalist"} with the ${esc(x.team)} in ${x.y}.`)}
+  return facts.length?facts[Math.floor(Math.random()*facts.length)]:"";
+}
+
+/* ---------- seasons index ---------- */
+function vSeasons(){
+  const pts=DB.seasons.filter(s=>isNum(s.w)).map(s=>({x:s.y,y:s.w,mark:s.res==="champ"?"gold":s.res==="pennant"?"star":null,tip:`${s.y}: ${s.w}–${s.l}, ${s.resLabel}`}));
+  const cols=[{k:"y",label:"Year",t:1,f:v=>ylink(v)},{k:"w",label:"W"},{k:"l",label:"L"},{k:"pct",label:"W-L%",f:fPct,lead:"max"},{k:"div",label:"Division",t:1},{k:"fin",label:"Finish",f:v=>v?ord(v):""},{k:"gb",label:"GB",f:v=>isNum(v)?(v===0?"—":v):""},{k:"resLabel",label:"Postseason",t:1},{k:"champ",label:"World Series winner",t:1,f:v=>v?teamName(v):""},
+    {k:"hr",label:"Team HR",v:r=>DB.T[r.y]&&DB.T[r.y].hr,lead:"max"},{k:"era",label:"Staff ERA",title:"Average ERA of the pitchers listed that season",v:r=>DB.T[r.y]&&DB.T[r.y].eraAvg,f:fEra,lead:"min",asc:1},{k:"ovr",label:"Avg OVR",v:r=>DB.T[r.y]&&DB.T[r.y].ovrAll,f:fOne,lead:"max"},{k:"age",label:"Avg age",v:r=>DB.T[r.y]&&DB.T[r.y].ageAll,f:fOne},{k:"as",label:"All-Stars",v:r=>DB.T[r.y]&&DB.T[r.y].as,lead:"max"},{k:"mgr",label:"Manager",t:1}];
+  return `<div class="crumbs"><a href="#/">Home</a> / Seasons</div><h1>${esc(DB.TEAM)} seasons</h1>
+  ${fig("Wins by season",lineChart({series:[{name:"Wins",points:pts,color:"var(--orange)"}],label:"Wins by season",yn:4}),"Gold dots mark World Series titles; hollow dots mark pennants lost in the World Series.")}
+  ${table(cols,DB.seasons,{sort:"y",dir:-1,leaders:true})}`;
+}
+
+/* ---------- season page ---------- */
+function vSeason(y){
+  y=Number(y);const s=DB.S[y];if(!s)return notFound(`There's no ${y} season in the database yet.`);
+  const rows=DB.byYear[y]||[];const t=DB.T[y]||{};
+  const ix=DB.years.indexOf(y),prev=DB.years[ix-1],next=DB.years[ix+1];
+  const hit=rows.filter(r=>r.hit).sort(by(r=>(r.role==="Bench"?100:0)+(r.slot||0),1));
+  const pit=rows.filter(r=>r.pit).sort(by(r=>(r.role==="RP"?100:0)+(r.slot||0),1));
+  const hcols=[{k:"slot",label:"#",v:r=>r.role==="Bench"?null:r.slot,f:(v,r)=>r.role==="Bench"?"BN":v},{k:"pos",label:"Pos",t:1},{k:"name",label:"Name",t:1,f:(v,r)=>nameCell(r)},{k:"age",label:"Age"},{k:"ovr",label:"OVR",lead:"max"},{k:"hr",label:"HR",lead:"max"},{k:"avg",label:"AVG",f:fAvg,lead:"max"},{k:"obp",label:"OBP",f:fAvg,lead:"max"},{k:"slg",label:"SLG",f:fAvg,lead:"max"},{k:"ops",label:"OPS",f:fAvg,lead:"max"},{k:"iso",label:"ISO",title:"Isolated power: SLG minus AVG",f:fAvg,lead:"max"},{k:"opsPlus",label:"OPS+",title:"OPS relative to the Orioles lineup average this season (100 = average)",lead:"max"}];
+  const pcols=[{k:"pos",label:"Role",t:1},{k:"name",label:"Name",t:1,f:(v,r)=>nameCell(r)},{k:"age",label:"Age"},{k:"ovr",label:"OVR",lead:"max"},{k:"w",label:"W",lead:"max"},{k:"l",label:"L"},{k:"era",label:"ERA",f:fEra,lead:"min",asc:1},{k:"eraPlus",label:"ERA+",title:"Staff-average ERA divided by this ERA (100 = team average)",lead:"max"},{k:"sv",label:"SV",lead:"max"},{k:"hld",label:"HLD",lead:"max"},{k:"k",label:"SO",lead:"max"}];
+  const ps=DB.playoffs.filter(p=>p.y===y);
+  const series=p=>{if(!p)return `<div class="series"><div class="rd">Not recorded</div></div>`;const isWS=p.round==="World Series";return `<div class="series ${isWS?"ws":""}"><div class="rd">${isWS?"World Series":(p.lg||"")+"CS"}${p.score?" ("+p.score+")":""}</div>${[[p.ta,p.ra,p.wa],[p.tb,p.rb,p.wb]].map(([tm,rec,w])=>`<div class="tm ${tm===p.winner?"win":""} ${tm===DB.TEAM?"me":""}"><span><a href="#/team/${teamSlug(tm)}">${esc(tm)}</a> <span class="rec">${esc(rec||"")}</span></span><span>${isNum(w)?w:(tm===p.winner?"W":"")}</span></div>`).join("")}</div>`};
+  const al=ps.find(p=>p.round!=="World Series"&&p.lg==="AL"),nl=ps.find(p=>p.round!=="World Series"&&p.lg==="NL"),ws=ps.find(p=>p.round==="World Series");
+  const fins=DB.finalists.filter(f=>f.y===y);
+  const finTable=(award,lg)=>{const r=fins.filter(f=>f.award===award&&f.lg===lg).sort(by(f=>f.rank,1));if(!r.length)return "";
+    const isP=r.some(f=>f.type==="Pitcher");const pidOf=f=>f.team===DB.TEAM?DB.nameToPid[f.name]:null;
+    const c=[{k:"rank",label:"Rk"},{k:"name",label:"Player",t:1,f:(v,f)=>{const pid=pidOf(f);return (pid?plink(pid,v):esc(v))+(f.winner?' <span class="tag v">Won</span>':"")}},{k:"team",label:"Team",t:1,f:v=>`<a href="#/team/${teamSlug(v)}">${esc(abbr(v))}</a>`},{k:"pos",label:"Pos",t:1},{k:"age",label:"Age"},{k:"ovr",label:"OVR"}].concat(isP&&award==="Cy Young"?[{k:"era",label:"ERA",f:fEra},{k:"wl",label:"W-L",v:f=>isNum(f.w)?f.w+"–"+f.l:""},{k:"k",label:"SO"}]:[{k:"hr",label:"HR"},{k:"avg",label:"AVG",f:fAvg},{k:"obp",label:"OBP",f:fAvg},{k:"slg",label:"SLG",f:fAvg},{k:"era",label:"ERA",f:fEra},{k:"k",label:"SO"}]);
+    return `<h3 style="margin-top:6px">${lg} ${award}</h3>${table(c,r,{sortable:false,rowClass:f=>f.team===DB.TEAM?"mine":""})}`};
+  const club=DB.club.filter(c=>c.y===y);
+  const prevIds=new Set((DB.byYear[y-1]||[]).map(r=>r.pid)),curIds=new Set(rows.map(r=>r.pid));
+  const arrivals=rows.filter(r=>!prevIds.has(r.pid)&&DB.byYear[y-1]),departures=(DB.byYear[y-1]||[]).filter(r=>!curIds.has(r.pid));
+  const kpi=(v,l)=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`;
+  return `<div class="crumbs"><a href="#/">Home</a> / <a href="#/seasons">Seasons</a> / ${y}</div>
+  <div class="titlebar"><h1>${y} ${esc(s.team||DB.TEAM)}</h1><div class="prevnext">${prev?`<a class="btn ghost" href="#/season/${prev}">${prev}</a>`:""}${next?`<a class="btn ghost" href="#/season/${next}">${next}</a>`:""}</div></div>
+  <p class="pmeta" style="margin-top:8px"><b>Record:</b> ${isNum(s.w)?`${s.w}–${s.l} (${fPct(s.pct)})`:"Not recorded"}${s.fin?`, ${ord(s.fin)} in the ${esc(s.div||"division")}`:""}${isNum(s.gb)&&s.gb>0?`, ${s.gb} GB`:""} &nbsp; <b>Manager:</b> ${esc(s.mgr||"")} &nbsp; ${resultBadge(s)}</p>
+  ${s.sum?`<blockquote class="wrap"><p>${esc(s.sum)}</p></blockquote>`:""}
+  <div class="kpis">${kpi(t.hr!=null?t.hr:"—","Team HR (listed hitters)")}${kpi(fAvg(t.opsAvg)||"—","Lineup OPS (average)")}${kpi(fEra(t.eraAvg)||"—","Staff ERA (average)")}${kpi(fOne(t.ovrAll)||"—","Average overall")}${kpi(fOne(t.ageAll)||"—","Average age")}${kpi(t.as!=null?t.as:"—","All-Stars")}${kpi(t.rookies!=null?t.rookies:"—","Rookies")}${t.retPct!=null?kpi(Math.round(t.retPct*100)+"%","Returning from "+(y-1)):""}</div>
+  <h2>Batting <span class="h-note">Bold orange marks the team leader</span></h2>${hit.length?table(hcols,hit,{leaders:true}):`<p class="muted">No hitters recorded.</p>`}
+  <h2>Pitching</h2>${pit.length?table(pcols,pit,{leaders:true}):`<p class="muted">No pitchers recorded.</p>`}
+  <h2>Postseason</h2>${ps.length?`<div class="bracket">${series(al)}${series(ws)}${series(nl)}</div>${ws?`<p class="small muted" style="margin-top:8px">${esc(ws.winner)} won the ${y} World Series${ws.score?" "+ws.score:""}.</p>`:""}`:`<p class="muted">No playoff series recorded for ${y}.</p>`}
+  <h2>Awards</h2><div class="grid g2"><div>${finTable("MVP","AL")}${finTable("Cy Young","AL")}</div><div>${finTable("MVP","NL")}${finTable("Cy Young","NL")}</div></div>
+  ${club.length?`<h2>99 Club</h2><div class="badges">${club.map(c=>`<span class="bdg ${c.team===DB.TEAM?"o":"g"}">${c.team===DB.TEAM&&DB.nameToPid[c.name]?`<a style="color:inherit" href="#/player/${DB.nameToPid[c.name]}">${esc(c.name)}</a>`:esc(c.name)} ${esc(c.pos||"")}, ${esc(abbr(c.team))}</span>`).join("")}</div>`:""}
+  ${DB.byYear[y-1]?`<h2>Roster changes from ${y-1}</h2><div class="grid g2"><div class="box"><h3>New this season (${arrivals.length})</h3><p>${arrivals.map(r=>plink(r.pid,r.name)+` <span class="muted small">${esc(r.pos)}</span>`).join(", ")||"None"}</p></div><div class="box"><h3>Gone from ${y-1} (${departures.length})</h3><p>${departures.map(r=>plink(r.pid,r.name)+` <span class="muted small">${esc(r.pos)}</span>`).join(", ")||"None"}</p></div></div>`:""}`;
+}
+
+/* ---------- team page (league teams) ---------- */
+function vTeam(name){
+  name=decodeURIComponent(name);const fins=DB.finalists.filter(f=>f.team===name);const po=DB.playoffs.filter(p=>p.ta===name||p.tb===name);const club=DB.club.filter(c=>c.team===name);
+  if(!fins.length&&!po.length&&!club.length&&name!==DB.TEAM)return notFound(`No records for ${esc(name)}.`);
+  if(name===DB.TEAM){location.hash="#/seasons";return ""}
+  const ws=po.filter(p=>p.round==="World Series");const titles=ws.filter(p=>p.winner===name);
+  const pcols=[{k:"y",label:"Year",f:v=>ylink(v)},{k:"round",label:"Round",t:1,v:p=>p.round==="World Series"?"World Series":(p.lg||"")+"CS"},{k:"opp",label:"Opponent",t:1,v:p=>p.ta===name?p.tb:p.ta,f:v=>teamName(v)},{k:"res",label:"Result",t:1,v:p=>p.winner===name?"Won":"Lost"},{k:"score",label:"Series",t:1}];
+  const fcols=[{k:"y",label:"Year",f:v=>ylink(v)},{k:"award",label:"Award",t:1,v:f=>f.lg+" "+f.award},{k:"rank",label:"Finish",f:v=>ord(v)},{k:"name",label:"Player",t:1,f:(v,f)=>esc(v)+(f.winner?' <span class="tag v">Won</span>':"")},{k:"pos",label:"Pos",t:1},{k:"age",label:"Age"},{k:"ovr",label:"OVR"}];
+  return `<div class="crumbs"><a href="#/">Home</a> / <a href="#/league">Around the League</a> / ${esc(name)}</div><h1>${esc(name)}</h1>
+  <div class="kpis"><div class="kpi"><div class="v">${titles.length}</div><div class="l">World Series titles</div></div><div class="kpi"><div class="v">${ws.length}</div><div class="l">World Series trips</div></div><div class="kpi"><div class="v">${po.length}</div><div class="l">LCS or WS series</div></div><div class="kpi"><div class="v">${fins.length}</div><div class="l">Award finalists</div></div><div class="kpi"><div class="v">${club.length}</div><div class="l">99 Club spots</div></div></div>
+  <h2>Postseason series</h2>${po.length?table(pcols,po,{sort:"y",dir:-1}):`<p class="muted">None recorded.</p>`}
+  <h2>Award finalists</h2>${fins.length?table(fcols,fins,{sort:"y",dir:-1}):`<p class="muted">None recorded.</p>`}
+  ${club.length?`<h2>99 Club</h2><p>${club.map(c=>`${esc(c.name)} (${c.y})`).join(", ")}</p>`:""}`;
+}
+/* ---------- players index ---------- */
+let PF={q:"",type:"all",hof:false};
+function vPlayers(){
+  return `<div class="crumbs"><a href="#/">Home</a> / Players</div><h1>Players</h1>
+  <p class="muted">Every Oriole on record from ${DB.years[0]} on, plus Hall of Famers from earlier eras. Click a column to sort.</p>
+  <div class="controls"><input type="search" id="pf-q" placeholder="Filter by name" value="${esc(PF.q)}" aria-label="Filter players by name">
+  <div class="seg" role="group" aria-label="Player type">${[["all","All"],["H","Hitters"],["P","Pitchers"]].map(([k,l])=>`<button type="button" data-pt="${k}" class="${PF.type===k?"on":""}">${l}</button>`).join("")}</div>
+  <label class="chk"><input type="checkbox" id="pf-hof" ${PF.hof?"checked":""}> Hall of Famers only</label></div>
+  <div id="plist">${playersTable()}</div>`;
+}
+function playersTable(){
+  let ps=DB.players.slice();
+  if(PF.q)ps=ps.filter(p=>p.name.toLowerCase().includes(PF.q.toLowerCase()));
+  if(PF.type!=="all")ps=ps.filter(p=>p.type===PF.type);
+  if(PF.hof)ps=ps.filter(p=>p.hof);
+  const common=[{k:"name",label:"Name",t:1,f:(v,p)=>plink(p.pid,v)+(p.hof?'<span class="tag hof">HOF</span>':"")},{k:"pos",label:"Pos",t:1},{k:"yrs",label:"Years",t:1,v:p=>p.first?`${p.first}–${p.last}`:"Pre-"+DB.years[0]},{k:"seasons",label:"Yrs"},{k:"peak",label:"Peak OVR",lead:"max"},{k:"as",label:"AS",title:"All-Star selections",lead:"max"},{k:"nVotes",label:"Votes",title:"Top 10 award vote finishes",lead:"max"},{k:"rings",label:"Rings",title:"World Series titles while on the roster",lead:"max"}];
+  const hitc=[{k:"HR",label:"HR",lead:"max"},{k:"AVG",label:"AVG",f:fAvg},{k:"OPS",label:"OPS",f:fAvg},{k:"OPSp",label:"OPS+",f:fInt,title:"Average of season OPS+ (team-relative)"}];
+  const pitc=[{k:"W",label:"W",lead:"max"},{k:"L",label:"L"},{k:"ERA",label:"ERA",f:fEra},{k:"ERAp",label:"ERA+",f:fInt},{k:"SV",label:"SV",lead:"max"},{k:"K",label:"SO",lead:"max"}];
+  let cols=common.concat(PF.type==="P"?pitc:PF.type==="H"?hitc:[{k:"HR",label:"HR",lead:"max"},{k:"OPS",label:"OPS",f:fAvg},{k:"W",label:"W",lead:"max"},{k:"SV",label:"SV",lead:"max"},{k:"ERA",label:"ERA",f:fEra}]).concat([{k:"legacy",label:"Legacy",title:"Legacy score; see Leaders for the formula",lead:"max"}]);
+  return ps.length?table(cols,ps,{sort:"legacy",dir:-1,leaders:true,note:`${ps.length} players. Rate stats are averages of season figures.`}):`<p class="muted">No players match. Clear the filters to see everyone.</p>`;
+}
+function bindPlayers(){
+  const q=document.getElementById("pf-q");if(!q)return;
+  q.addEventListener("input",()=>{PF.q=q.value;document.getElementById("plist").innerHTML=playersTable()});
+  document.querySelectorAll("[data-pt]").forEach(b=>b.addEventListener("click",()=>{PF.type=b.dataset.pt;document.querySelectorAll("[data-pt]").forEach(x=>x.classList.toggle("on",x===b));document.getElementById("plist").innerHTML=playersTable()}));
+  document.getElementById("pf-hof").addEventListener("change",e=>{PF.hof=e.target.checked;document.getElementById("plist").innerHTML=playersTable()});
+}
+
+/* ---------- player page ---------- */
+function agingCurve(type){const m={};DB.roster.filter(r=>(type==="P"?r.pit:r.hit)&&isNum(r.age)&&isNum(r.ovr)).forEach(r=>{(m[r.age]=m[r.age]||[]).push(r.ovr)});return Object.keys(m).map(Number).filter(a=>m[a].length>=2).sort((a,b)=>a-b).map(a=>({x:a,y:mean(m[a]),tip:`Age ${a}: team average ${fOne(mean(m[a]))} OVR (${m[a].length} player-seasons)`}))}
+function vPlayer(pid){
+  const p=DB.P[pid];if(!p)return notFound("That player isn't in the database.");
+  const isP=p.type==="P";const rows=p.rows;
+  const badges=[];
+  if(p.hof)badges.push(`<span class="bdg g">Hall of Fame</span>`);
+  p.won.forEach(f=>badges.push(`<span class="bdg o">${f.y} ${esc(f.lg)} ${esc(f.award)}</span>`));
+  if(p.rings)badges.push(`<span class="bdg o">${p.rings}× World Series champion</span>`);
+  if(p.as)badges.push(`<span class="bdg n">${p.as}× All-Star</span>`);
+  if(p.n99)badges.push(`<span class="bdg g">${p.n99} season${p.n99>1?"s":""} at 99</span>`);
+  if(p.rookieYear)badges.push(`<span class="bdg">Rookie in ${p.rookieYear}</span>`);
+  const ages=p.ages.length?`${Math.min(...p.ages)}–${Math.max(...p.ages)}`:"";
+  const sm=(l,v,sub)=>`<div><div class="lbl">${l}</div><div class="val">${v===""||v==null?"—":v}</div>${sub?`<div class="sub">${sub}</div>`:""}</div>`;
+  let summary="";
+  if(rows.length){summary=isP?sm("Seasons",p.seasons)+sm("W–L",`${p.W}–${p.L}`)+sm("ERA",fEra(p.ERA),"season average")+sm("ERA+",fInt(p.ERAp))+sm("Saves",p.SV)+sm("Holds",p.HLD)+sm("Strikeouts",p.K,"2035 on")+sm("Peak OVR",p.peak)
+    :sm("Seasons",p.seasons)+sm("HR",p.HR)+sm("AVG",fAvg(p.AVG),"season average")+sm("OBP",fAvg(p.OBP))+sm("SLG",fAvg(p.SLG))+sm("OPS+",fInt(p.OPSp))+sm("Best HR year",p.bestHR)+sm("Peak OVR",p.peak)}
+  const hofLine=(isNum(p.hofH)||isNum(p.hofHR))?`<div class="box" style="border-color:var(--gold)"><h3>Career line (Hall of Fame record, all seasons)</h3><div class="summary" style="margin:6px 0 0">${sm("Hits",p.hofH)}${sm("HR",p.hofHR)}${sm("AVG",fAvg(p.hofAVG))}${sm("OBP",fAvg(p.hofOBP))}${sm("SLG",fAvg(p.hofSLG))}${isNum(p.hofOBP)&&isNum(p.hofSLG)?sm("OPS",fAvg(p.hofOBP+p.hofSLG)):""}</div></div>`:"";
+  const curve=agingCurve(p.type);
+  const ovrPts=rows.filter(r=>isNum(r.ovr)&&isNum(r.age)).map(r=>({x:r.age,y:r.ovr,mark:r.is99?"gold":r.as?"star":null,tip:`${r.y} (age ${r.age}): ${r.ovr} OVR${r.as?", All-Star":""}`}));
+  const ovrChart=ovrPts.length?fig("Overall rating by age",lineChart({series:[{name:"Team average at age",points:curve,color:"var(--muted)",dash:"5 4",noDots:true,w:1.6},{name:p.name,points:ovrPts,color:"var(--orange)"}],label:"Overall by age",xmin:Math.min(...ovrPts.map(q=>q.x))-1,xmax:Math.max(...ovrPts.map(q=>q.x))+1}),"Hollow dots are All-Star seasons, gold dots are 99-overall seasons. The dashed line is the average overall of every Oriole "+(isP?"pitcher":"hitter")+" at that age.",[[p.name,"var(--orange)"],["Team average at age","var(--muted)"]]):"";
+  let statChart="";
+  if(rows.length){if(isP){const hasEra=p.pitRows.some(r=>isNum(r.era));statChart=hasEra?fig("ERA by season",barChart({bars:p.pitRows.map(r=>({label:String(r.y),sub:r.pos,v:r.era,color:isNum(r.eraPlus)&&r.eraPlus>=100?"var(--good)":"var(--bad)",tip:`${r.y}: ${fEra(r.era)} ERA, ERA+ ${r.eraPlus||"—"}`})),values:true,vfmt:fEra,label:"ERA by season"}),"Green bars beat the staff average that season (ERA+ 100 or better); red bars trail it."):""}
+    else statChart=fig("Home runs by season",barChart({bars:p.hitRows.map(r=>({label:String(r.y),sub:r.pos,v:r.hr,color:r.role==="Bench"?"var(--muted)":"var(--orange)",tip:`${r.y}: ${r.hr} HR, OPS+ ${r.opsPlus||"—"}`})),values:true,label:"Home runs by season"}),"Grey bars are bench seasons.")}
+  const tot=(f)=>sum(rows.map(f));
+  const hcols=[{k:"y",label:"Year",t:1,f:v=>ylink(v)},{k:"age",label:"Age"},{k:"role",label:"Role",t:1},{k:"pos",label:"Pos",t:1},{k:"ovr",label:"OVR",lead:"max"},{k:"hr",label:"HR",lead:"max"},{k:"avg",label:"AVG",f:fAvg,lead:"max"},{k:"obp",label:"OBP",f:fAvg,lead:"max"},{k:"slg",label:"SLG",f:fAvg,lead:"max"},{k:"ops",label:"OPS",f:fAvg,lead:"max"},{k:"iso",label:"ISO",f:fAvg,lead:"max"},{k:"opsPlus",label:"OPS+",lead:"max"},{k:"aw",label:"Awards",t:1,sort:false,f:(v,r)=>tags(r)}];
+  const pcols=[{k:"y",label:"Year",t:1,f:v=>ylink(v)},{k:"age",label:"Age"},{k:"pos",label:"Role",t:1},{k:"ovr",label:"OVR",lead:"max"},{k:"w",label:"W",lead:"max"},{k:"l",label:"L"},{k:"wpct",label:"W-L%",f:fPct},{k:"era",label:"ERA",f:fEra,lead:"min",asc:1},{k:"eraPlus",label:"ERA+",lead:"max"},{k:"sv",label:"SV",lead:"max"},{k:"hld",label:"HLD",lead:"max"},{k:"k",label:"SO",lead:"max"},{k:"aw",label:"Awards",t:1,sort:false,f:(v,r)=>tags(r)}];
+  const foot=rows.length?(isP?`<tr><td class="t">${p.seasons} yrs</td><td></td><td></td><td>${fOne(p.avgOvr)}</td><td>${p.W}</td><td>${p.L}</td><td>${p.W+p.L?fPct(p.W/(p.W+p.L)):""}</td><td>${fEra(p.ERA)}</td><td>${fInt(p.ERAp)}</td><td>${p.SV}</td><td>${p.HLD}</td><td>${p.K}</td><td class="t"></td></tr>`
+    :`<tr><td class="t">${p.seasons} yrs</td><td></td><td></td><td></td><td>${fOne(p.avgOvr)}</td><td>${p.HR}</td><td>${fAvg(p.AVG)}</td><td>${fAvg(p.OBP)}</td><td>${fAvg(p.SLG)}</td><td>${fAvg(p.OPS)}</td><td>${fAvg(p.ISO)}</td><td>${fInt(p.OPSp)}</td><td class="t"></td></tr>`):"";
+  const statTable=rows.length?table(isP?pcols:hcols,isP?p.pitRows:p.hitRows,{sort:"y",dir:1,leaders:true,foot,note:"Totals row: counting stats are summed; rate stats and OVR are averages of the seasons shown. Orange marks his best season in each column."}):`<p class="muted">${esc(p.name)} has no tracked seasons; his Orioles career came before ${DB.years[0]}.</p>`;
+  /* accolades */
+  const acc=[];
+  p.votes.forEach(v=>acc.push(`<li>${ylink(v.y)}: top 10 in ${esc(v.award)} voting${v.fin?" (finalist)":""}</li>`));
+  p.fin.forEach(f=>acc.push(`<li>${ylink(f.y)}: ${ord(f.rank)} in ${esc(f.lg)} ${esc(f.award)} voting${f.winner?" <b>(won)</b>":""}</li>`));
+  p.club.forEach(c=>acc.push(`<li>${ylink(c.y)}: 99 Club</li>`));
+  p.rows.filter(r=>r.as).forEach(r=>acc.push(`<li>${ylink(r.y)}: All-Star</li>`));
+  acc.sort((a,b)=>a.replace(/<[^>]+>/g,"").localeCompare(b.replace(/<[^>]+>/g,"")));
+  const post=p.years.map(y=>DB.S[y]).filter(s=>s&&s.res!=="miss").map(s=>`<li>${ylink(s.y)}: ${esc(s.resLabel)}</li>`);
+  const alum=p.alumni.map(a=>`<li>${a.y}: ${a.award==="99 Club"?"99 Club":ord(a.rank)+" in "+esc(a.lg)+" "+esc(a.award)+" voting"} with the <a href="#/team/${teamSlug(a.team)}">${esc(a.team)}</a>${a.ovr?` (${a.ovr} OVR)`:""}</li>`);
+  /* teammates */
+  const mates={};p.years.forEach(y=>(DB.byYear[y]||[]).forEach(r=>{if(r.pid!==p.pid)mates[r.pid]=(mates[r.pid]||0)+1}));
+  const topMates=Object.entries(mates).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  const sim=p.similar||[];
+  return `<div class="crumbs"><a href="#/">Home</a> / <a href="#/players">Players</a> / ${esc(p.name)}</div>
+  <div class="phead ${p.hof?"hof":""}"><div class="jersey ${p.jersey!=null?"":"none"}" aria-label="${p.jersey!=null?"Jersey number "+p.jersey:"No jersey number recorded"}">${p.jersey!=null?esc(p.jersey):esc(p.pos||"")}</div>
+    <div><h1>${esc(p.name)}</h1>
+    <p class="pmeta"><b>Position:</b> ${esc(p.pos||p.ppos||"")}${p.throws?` &nbsp; <b>Throws:</b> ${p.throws==="L"?"Left":"Right"}`:""} &nbsp; <b>Orioles:</b> ${p.first?`${p.first}–${p.last} (${p.seasons} season${p.seasons>1?"s":""})`:`before ${DB.years[0]}`}${ages?` &nbsp; <b>Ages:</b> ${ages}`:""}</p>
+    ${p.hof?`<div class="hofband">Inducted into the Orioles Hall of Fame${p.jersey!=null?", No. "+esc(p.jersey):""}</div>`:""}
+    <div class="badges">${badges.join("")}</div>
+    ${rows.length?seasonStrip(p):""}
+    <p style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn ghost" href="#/compare/${p.pid}">Compare with other players</a><button class="btn" type="button" data-card="${p.pid}">Download player card</button></p></div></div>
+  ${summary?`<div class="summary">${summary}</div><p class="small muted">Tracked Orioles seasons from ${DB.years[0]} on. Legacy score: <b>${p.legacy}</b>.${(()=>{const pr=projFor(p);return pr?` Projected ${DB.years[DB.years.length-1]+1}: <b>${pr.ovr} overall</b> at age ${pr.age} (${pr.delta>0?"+":""}${pr.delta}). <a href="#/projections">How projections work</a>`:""})()}</p>`:""}
+  ${hofLine}
+  <div class="grid g2" style="margin-top:12px">${ovrChart}${statChart}</div>
+  <h2>${isP?"Pitching":"Batting"}, year by year</h2>${statTable}
+  <div class="grid g3" style="margin-top:16px">
+    <div class="box"><h3>Accolades</h3>${acc.length?`<ul class="facts">${acc.join("")}</ul>`:`<p class="muted">None recorded yet.</p>`}</div>
+    <div class="box"><h3>Postseason runs</h3>${post.length?`<ul class="facts">${post.join("")}</ul>`:`<p class="muted">No LCS or division-title seasons on record.</p>`}${p.rings?`<p><b>Rings:</b> ${p.ringYears.join(", ")}</p>`:""}</div>
+    <div class="box"><h3>Most frequent teammates</h3>${topMates.length?`<ul class="facts">${topMates.map(([id,n])=>`<li>${plink(id,DB.P[id].name)}: ${n} season${n>1?"s":""} together</li>`).join("")}</ul>`:`<p class="muted">None on record.</p>`}</div>
+    ${alum.length?`<div class="box"><h3>Around the league</h3><ul class="facts">${alum.join("")}</ul></div>`:""}
+    ${sim.length?`<div class="box"><h3>Most similar Orioles</h3><ul class="facts">${sim.map(s=>`<li>${plink(s.p.pid,s.p.name)} <span class="muted">(${s.score})</span> <a class="small" href="#/compare/${p.pid},${s.p.pid}">compare</a></li>`).join("")}</ul><p class="small muted">Similarity (out of 1000) compares peak and average overall, tenure and per-season production.</p></div>`:""}
+  </div>`;
+}
+
+/* ---------- compare ---------- */
+const CMP_COLORS=["var(--orange)","var(--navy-2)","var(--gold)","var(--good)"];
+let CMP={ids:[],axis:"age"};
+function vCompare(ids){
+  if(ids!=null)CMP.ids=ids.split(",").filter(id=>DB.P[id]).slice(0,4);
+  return `<div class="crumbs"><a href="#/">Home</a> / Compare</div><h1>Compare players</h1><p class="muted">Pick up to four players. Leaders in each row are marked in orange.</p><div id="cmp">${cmpBody()}</div>`;
+}
+function cmpBody(){
+  const ps=CMP.ids.map(id=>DB.P[id]);
+  const pickers=[0,1,2,3].map(i=>{const p=ps[i];return `<div class="picker" style="--c:${CMP_COLORS[i]}">${p?`<div class="chip"><a href="#/player/${p.pid}">${esc(p.name)}</a><button type="button" data-rm="${i}" aria-label="Remove ${esc(p.name)}">×</button></div>`:(i===ps.length?`<input type="search" data-add placeholder="Add a player" aria-label="Add a player to compare"><div class="dd" hidden></div>`:"")}</div>`}).join("");
+  if(!ps.length)return `<div class="pickers">${pickers}</div><p>Start by adding a player. Try two Hall of Famers, or a player and his most similar Oriole from his player page.</p>`;
+  const rowsDef=[["Position",p=>p.pos||p.ppos||"",null],["Orioles years",p=>p.first?`${p.first}–${p.last}`:"Pre-"+DB.years[0],null],["Seasons",p=>p.seasons,"max"],["Peak overall",p=>p.peak,"max"],["Average overall",p=>p.avgOvr,"max",fOne],["All-Star selections",p=>p.as,"max"],["Top 10 award votes",p=>p.nVotes,"max"],["Awards won",p=>p.won.length,"max"],["Seasons at 99",p=>p.n99,"max"],["World Series rings",p=>p.rings,"max"],["Hall of Fame",p=>p.hof?"Yes":"No",null],["Legacy score",p=>p.legacy,"max"],
+    ["Home runs",p=>p.HR,"max"],["AVG (season avg)",p=>p.AVG,"max",fAvg],["OBP",p=>p.OBP,"max",fAvg],["SLG",p=>p.SLG,"max",fAvg],["OPS",p=>p.OPS,"max",fAvg],["OPS+",p=>p.OPSp,"max",fInt],["Best HR season",p=>p.bestHR,"max"],
+    ["Wins",p=>p.W,"max"],["Losses",p=>p.L,"min"],["ERA (season avg)",p=>p.ERA,"min",fEra],["ERA+",p=>p.ERAp,"max",fInt],["Saves",p=>p.SV,"max"],["Holds",p=>p.HLD,"max"],["Strikeouts",p=>p.K,"max"],
+    ["Career hits (HOF)",p=>p.hofH,"max"],["Career HR (HOF)",p=>p.hofHR,"max"]];
+  const body=rowsDef.filter(([l,f])=>ps.some(p=>{const v=f(p);return v!=null&&v!==""&&!(typeof v==="number"&&isNaN(v))})).map(([l,f,dir,fmt])=>{const vals=ps.map(f);const nums=vals.filter(isNum);let best=null;if(dir&&nums.length>1&&new Set(nums).size>1)best=dir==="max"?Math.max(...nums):Math.min(...nums);
+    return `<tr><td class="t">${l}</td>${vals.map(v=>`<td class="${best!=null&&v===best?"best":""}">${v==null||v===""?"—":fmt?fmt(v):esc(v)}</td>`).join("")}</tr>`}).join("");
+  const cmpTable=`<div class="tw"><table class="st cmp"><thead><tr><th class="t"></th>${ps.map((p,i)=>`<th style="border-bottom-color:${CMP_COLORS[i]}"><a href="#/player/${p.pid}">${esc(p.name)}</a></th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
+  const ax=CMP.axis;const xk=ax==="age"?"age":"y";
+  const series=ps.map((p,i)=>({name:p.name,color:CMP_COLORS[i],points:p.rows.filter(r=>isNum(r[xk])&&isNum(r.ovr)).map(r=>({x:r[xk],y:r.ovr,mark:r.is99?"gold":r.as?"star":null,tip:`${p.name}, ${r.y} (age ${r.age}): ${r.ovr}`}))}));
+  const hitters=ps.filter(p=>p.hitRows.length),pitchers=ps.filter(p=>p.pitRows.length);
+  const hrSeries=hitters.map(p=>({name:p.name,color:CMP_COLORS[ps.indexOf(p)],points:p.hitRows.map(r=>({x:r[xk],y:r.hr,tip:`${p.name}, ${r.y}: ${r.hr} HR`}))}));
+  const cumSeries=hitters.map(p=>{let c=0;return {name:p.name,color:CMP_COLORS[ps.indexOf(p)],points:p.hitRows.map(r=>{c+=isNum(r.hr)?r.hr:0;return {x:r[xk],y:c,tip:`${p.name} through ${r.y}: ${c} HR`}})}});
+  const eraSeries=pitchers.map(p=>({name:p.name,color:CMP_COLORS[ps.indexOf(p)],points:p.pitRows.map(r=>({x:r[xk],y:r.era,tip:`${p.name}, ${r.y}: ${fEra(r.era)} ERA`}))}));
+  const keys=ps.map((p,i)=>[p.name,CMP_COLORS[i]]);
+  const overlap=ps.length>1?DB.years.filter(y=>ps.every(p=>p.years.includes(y))):[];
+  const facts=[];
+  if(ps.length>1){facts.push(overlap.length?`All ${ps.length} were Orioles together in ${overlap.join(", ")}.`:`These players never shared an Orioles roster.`);
+    const sharedRings=overlap.filter(y=>DB.champYears.has(y));if(sharedRings.length)facts.push(`They won the World Series together in ${sharedRings.join(", ")}.`);
+    const lg=maxBy(ps,p=>p.legacy);facts.push(`${esc(lg.name)} has the highest legacy score (${lg.legacy}).`);
+    const pk=ps.filter(p=>isNum(p.peak)).sort(by(p=>p.peak,-1));if(pk.length>1)facts.push(`Peak overall: ${pk.map(p=>`${esc(p.name)} ${p.peak}`).join(", ")}.`)}
+  return `<div class="pickers">${pickers}</div>${cmpTable}
+  ${facts.length?`<div class="box"><h3>Head to head</h3><ul class="facts">${facts.map(f=>`<li>${f}</li>`).join("")}</ul></div>`:""}
+  <div class="controls"><span class="small muted">Chart by</span><div class="seg" role="group" aria-label="Chart axis"><button type="button" data-ax="age" class="${ax==="age"?"on":""}">Age</button><button type="button" data-ax="year" class="${ax==="year"?"on":""}">Season</button></div></div>
+  <div class="grid g2">${fig("Overall rating",lineChart({series,label:"Overall comparison"}),"Hollow dots: All-Star seasons. Gold dots: 99 overall.",keys)}
+  ${hitters.length?fig("Cumulative home runs",lineChart({series:cumSeries,label:"Cumulative home runs"}),"Running total across tracked seasons.",hitters.map(p=>[p.name,CMP_COLORS[ps.indexOf(p)]])):""}
+  ${hitters.length?fig("Home runs per season",lineChart({series:hrSeries,label:"Home runs per season"}),"",hitters.map(p=>[p.name,CMP_COLORS[ps.indexOf(p)]])):""}
+  ${pitchers.some(p=>p.pitRows.some(r=>isNum(r.era)))?fig("ERA per season",lineChart({series:eraSeries,label:"ERA per season"}),"Lower is better.",pitchers.map(p=>[p.name,CMP_COLORS[ps.indexOf(p)]])):""}</div>`;
+}
+function bindCompare(){
+  const root=document.getElementById("cmp");if(!root)return;
+  const redraw=()=>{root.innerHTML=cmpBody();history.replaceState(null,"","#/compare"+(CMP.ids.length?"/"+CMP.ids.join(","):""));bindCompare()};
+  root.querySelectorAll("[data-rm]").forEach(b=>b.addEventListener("click",()=>{CMP.ids.splice(+b.dataset.rm,1);redraw()}));
+  root.querySelectorAll("[data-ax]").forEach(b=>b.addEventListener("click",()=>{CMP.axis=b.dataset.ax;redraw()}));
+  const inp=root.querySelector("[data-add]");if(!inp)return;const dd=inp.nextElementSibling;
+  inp.addEventListener("input",()=>{const q=inp.value.trim().toLowerCase();if(!q){dd.hidden=true;return}
+    const m=DB.players.filter(p=>!CMP.ids.includes(p.pid)&&p.name.toLowerCase().includes(q)).slice(0,10);
+    dd.innerHTML=m.map(p=>`<button type="button" data-pid="${p.pid}">${esc(p.name)} <span class="muted small">${esc(p.pos||p.ppos||"")} ${p.first?p.first+"–"+p.last:"HOF"}</span></button>`).join("")||`<button type="button" disabled>No matches</button>`;dd.hidden=false;
+    dd.querySelectorAll("[data-pid]").forEach(b=>b.addEventListener("click",()=>{CMP.ids.push(b.dataset.pid);redraw();const n=document.querySelector("#cmp [data-add]");if(n)n.focus()}))});
+  inp.addEventListener("keydown",e=>{if(e.key==="Enter"){const b=dd.querySelector("[data-pid]");if(b)b.click()}});
+}
+/* ---------- leaders ---------- */
+let LTAB="season";
+function lbList(title,items,fmtv,note){return `<div class="lb"><h3>${title}</h3><ol>${items.length?items.map((x,i)=>`<li><span class="rk">${i+1}</span><span class="nm">${plink(x.pid,x.name)}${x.y?` <span class="muted small">${x.y}</span>`:""}</span><span class="vl">${fmtv(x.v)}</span></li>`).join(""):`<li><span></span><span class="muted">No qualifying players</span><span></span></li>`}</ol>${note?`<p class="small muted" style="margin:4px 10px 8px">${note}</p>`:""}</div>`}
+function vLeaders(){
+  const R=DB.roster;
+  const ss=(f,filter,asc,n=10)=>R.filter(r=>filter(r)&&isNum(f(r))).sort(by(f,asc?1:-1)).slice(0,n).map(r=>({pid:r.pid,name:r.name,y:r.y,v:f(r)}));
+  const lu=r=>r.role==="Lineup",anyH=r=>r.hit,sp=r=>r.role==="SP",anyP=r=>r.pit,rp=r=>r.role==="RP";
+  const season=`<div class="grid g4">
+    ${lbList("Home runs",ss(r=>r.hr,anyH),fInt)}${lbList("Batting average",ss(r=>r.avg,lu),fAvg,"Starting lineup only")}${lbList("On-base percentage",ss(r=>r.obp,lu),fAvg,"Starting lineup only")}${lbList("Slugging",ss(r=>r.slg,lu),fAvg,"Starting lineup only")}
+    ${lbList("OPS",ss(r=>r.ops,lu),fAvg,"Starting lineup only")}${lbList("OPS+ (team-relative)",ss(r=>r.opsPlus,lu),fInt,"OPS vs the Orioles lineup average that year")}${lbList("Isolated power",ss(r=>r.iso,lu),fAvg)}${lbList("Overall rating (hitters)",ss(r=>r.ovr,anyH),fInt)}
+    ${lbList("Wins",ss(r=>r.w,anyP),fInt)}${lbList("ERA (starters)",ss(r=>r.era,sp,true),fEra,"Rotation only, lowest first")}${lbList("ERA+ (team-relative)",ss(r=>r.eraPlus,anyP),fInt)}${lbList("Strikeouts",ss(r=>r.k,anyP),fInt,"Recorded from 2035 on")}
+    ${lbList("Saves",ss(r=>r.sv,anyP),fInt)}${lbList("Holds",ss(r=>r.hld,anyP),fInt)}${lbList("Winning percentage",ss(r=>r.wpct,r=>sp(r)&&r.w+r.l>=10),fPct,"Starters with 10+ decisions")}${lbList("ERA (relievers)",ss(r=>r.era,r=>rp(r)&&r.era>0,true),fEra)}
+  </div>`;
+  const ps=DB.players.filter(p=>p.rows.length);
+  const cr=(f,filter=()=>true,asc,n=10)=>ps.filter(p=>filter(p)&&isNum(f(p))&&(asc||f(p)>0)).sort(by(f,asc?1:-1)).slice(0,n).map(p=>({pid:p.pid,name:p.name,v:f(p)}));
+  const career=`<div class="grid g4">
+    ${lbList("Legacy score",cr(p=>p.legacy),fInt)}${lbList("Seasons",cr(p=>p.seasons),fInt)}${lbList("All-Star selections",cr(p=>p.as),fInt)}${lbList("Top 10 award votes",cr(p=>p.nVotes),fInt)}
+    ${lbList("World Series rings",cr(p=>p.rings),fInt)}${lbList("Seasons at 99",cr(p=>p.n99),fInt)}${lbList("Peak overall",cr(p=>p.peak),fInt)}${lbList("Average overall (3+ seasons)",cr(p=>p.avgOvr,p=>p.seasons>=3),fOne)}
+    ${lbList("Home runs",cr(p=>p.HR),fInt)}${lbList("OPS+ (3+ seasons)",cr(p=>p.OPSp,p=>p.hitRows.length>=3),fInt)}${lbList("Career HR (HOF record)",DB.players.filter(p=>isNum(p.hofHR)).sort(by(p=>p.hofHR,-1)).slice(0,10).map(p=>({pid:p.pid,name:p.name,v:p.hofHR})),fInt,"Full careers from the Hall of Fame list")}${lbList("Career hits (HOF record)",DB.players.filter(p=>isNum(p.hofH)).sort(by(p=>p.hofH,-1)).slice(0,10).map(p=>({pid:p.pid,name:p.name,v:p.hofH})),fInt)}
+    ${lbList("Wins",cr(p=>p.W),fInt)}${lbList("Saves",cr(p=>p.SV),fInt)}${lbList("Holds",cr(p=>p.HLD),fInt)}${lbList("Strikeouts",cr(p=>p.K),fInt,"Recorded from 2035 on")}
+  </div>`;
+  return `<div class="crumbs"><a href="#/">Home</a> / Leaders</div><h1>Orioles leaders</h1>
+  <div class="controls"><div class="seg" role="group" aria-label="Leaderboard type"><button type="button" data-lt="season" class="${LTAB==="season"?"on":""}">Single season</button><button type="button" data-lt="career" class="${LTAB==="career"?"on":""}">Career (tracked)</button></div></div>
+  <div id="lbody">${LTAB==="season"?season:career}</div>
+  <div class="box" style="margin-top:16px"><h3>How the legacy score works</h3><p>One point per season, 4 per All-Star selection, 3 per top 10 award vote, 3 per season at 99 overall, 2 per World Series ring, 8 per MVP or Cy Young won as an Oriole, 3 per other finalist finish, and 10 for the Hall of Fame. It's a quick way to rank franchise impact using only what the database tracks.</p></div>`;
+}
+
+/* ---------- analytics ---------- */
+function vAnalytics(){
+  const Y=DB.years,T=DB.T;
+  const bands=DB.seasons.filter(s=>s.res==="champ").map(s=>({x:s.y,color:"var(--orange)"}));
+  const strength=lineChart({series:[{name:"Lineup",color:"var(--orange)",points:Y.map(y=>({x:y,y:T[y].ovrLu,tip:`${y} lineup: ${fOne(T[y].ovrLu)}`}))},{name:"Rotation",color:"var(--navy-2)",points:Y.map(y=>({x:y,y:T[y].ovrRot,tip:`${y} rotation: ${fOne(T[y].ovrRot)}`}))},{name:"Bullpen",color:"var(--gold)",points:Y.map(y=>({x:y,y:T[y].ovrPen,tip:`${y} bullpen: ${fOne(T[y].ovrPen)}`}))}],bands,label:"Roster strength"});
+  const ageC=lineChart({series:[{name:"Lineup",color:"var(--orange)",points:Y.map(y=>({x:y,y:T[y].ageLu}))},{name:"Rotation",color:"var(--navy-2)",points:Y.map(y=>({x:y,y:T[y].ageRot}))},{name:"Bullpen",color:"var(--gold)",points:Y.map(y=>({x:y,y:T[y].agePen}))}],bands,label:"Average age"});
+  const hc=agingCurve("H"),pc=agingCurve("P");
+  const aging=lineChart({series:[{name:"Hitters",color:"var(--orange)",points:hc},{name:"Pitchers",color:"var(--navy-2)",points:pc}],label:"Aging curve"});
+  const peakAge=(c)=>{const m=maxBy(c,q=>q.y);return m?m.x:null};
+  const turnover=barChart({bars:Y.slice(1).map(y=>({label:String(y),v:T[y].retPct!=null?Math.round(T[y].retPct*100):null,color:DB.champYears.has(y)?"var(--orange)":"var(--navy-2)",tip:`${y}: ${T[y].returning} of ${T[y].n} back from ${y-1}`})),values:true,vfmt:v=>v+"%",ymax:100,label:"Returning players"});
+  const sc=scatter({points:DB.seasons.filter(s=>isNum(s.w)&&T[s.y]&&isNum(T[s.y].ovrAll)).map(s=>({x:T[s.y].ovrAll,y:s.w,label:String(s.y),color:s.res==="champ"?"var(--orange)":"var(--navy-2)",tip:`${s.y}: ${fOne(T[s.y].ovrAll)} average overall, ${s.w} wins`})),xl:"Average roster overall",yl:"Wins",xfmt:v=>Number.isInteger(v)?v:v.toFixed(1),label:"Talent vs wins"});
+  const sc2=scatter({points:DB.seasons.filter(s=>isNum(s.w)&&T[s.y]).map(s=>({x:T[s.y].ageAll,y:s.w,label:String(s.y),color:s.res==="champ"?"var(--orange)":"var(--navy-2)",tip:`${s.y}: average age ${fOne(T[s.y].ageAll)}, ${s.w} wins`})),xl:"Average roster age",yl:"Wins",xfmt:v=>Number.isInteger(v)?v:v.toFixed(1),label:"Age vs wins"});
+  const slots=[1,2,3,4,5,6,7,8,9].map(n=>{const r=DB.roster.filter(x=>x.role==="Lineup"&&x.slot===n);return {label:"#"+n,v:mean(r.map(x=>x.hr)),sub:fAvg(mean(r.map(x=>x.ops))),tip:`Batting ${ord(n)}: ${fOne(mean(r.map(x=>x.hr)))} HR and ${fAvg(mean(r.map(x=>x.ops)))} OPS on average`}});
+  const slotC=barChart({bars:slots.map(s=>Object.assign(s,{color:"var(--orange)"})),values:true,vfmt:fOne,label:"Home runs by lineup slot"});
+  const core=Y[0];const coreIds=new Set((DB.byYear[core]||[]).map(r=>r.pid));
+  const survive=barChart({bars:Y.map(y=>({label:String(y),v:(DB.byYear[y]||[]).filter(r=>coreIds.has(r.pid)).length,color:"var(--navy-2)",tip:`${y}: ${(DB.byYear[y]||[]).filter(r=>coreIds.has(r.pid)).length} players from the ${core} roster`})),values:true,label:"Core survival"});
+  const stars=barChart({bars:Y.map(y=>({label:String(y),v:T[y].as,sub:DB.S[y]&&isNum(DB.S[y].w)?DB.S[y].w+"W":"",color:DB.champYears.has(y)?"var(--orange)":"var(--navy-2)"})),values:true,label:"All-Stars by season"});
+  const rook=barChart({bars:Y.map(y=>({label:String(y),v:T[y].rookies,color:"var(--gold)"})),values:true,label:"Rookies by season"});
+  const pow=lineChart({series:[{name:"Team HR",color:"var(--orange)",points:Y.map(y=>({x:y,y:T[y].hr,tip:`${y}: ${T[y].hr} HR`}))}],bands,label:"Team home runs"});
+  const pitchC=lineChart({series:[{name:"Rotation ERA",color:"var(--navy-2)",points:Y.map(y=>({x:y,y:T[y].rotEra,tip:`${y} rotation: ${fEra(T[y].rotEra)}`}))},{name:"Bullpen ERA",color:"var(--gold)",points:Y.map(y=>({x:y,y:T[y].penEra,tip:`${y} bullpen: ${fEra(T[y].penEra)}`}))}],bands,yfmt:v=>v.toFixed(1),label:"Staff ERA"});
+  const rtxt=r=>r==null?"":` Correlation r = ${r.toFixed(2)}${Math.abs(r)>=.5?" (strong)":Math.abs(r)>=.3?" (moderate)":" (weak)"}.`;
+  return `<div class="crumbs"><a href="#/">Home</a> / Analytics</div><h1>Analytics</h1>
+  <p class="muted">Patterns across every tracked season. Orange shading or dots mark World Series title years.</p>
+  <div class="grid g2">
+  ${fig("Roster strength by unit",strength,"Average overall of the starting lineup, rotation and bullpen each season.",[["Lineup","var(--orange)"],["Rotation","var(--navy-2)"],["Bullpen","var(--gold)"]])}
+  ${fig("Does talent buy wins?",sc.svg||sc,"Each dot is a season: average overall of everyone listed vs. wins."+rtxt(sc.r))}
+  ${fig("Aging curve",aging,`Average overall at each age across every Oriole player-season (ages with 2+ seasons). Hitters peak around ${peakAge(hc)||"—"}, pitchers around ${peakAge(pc)||"—"}.`,[["Hitters","var(--orange)"],["Pitchers","var(--navy-2)"]])}
+  ${fig("Roster age by unit",ageC,"Average age of the lineup, rotation and bullpen.",[["Lineup","var(--orange)"],["Rotation","var(--navy-2)"],["Bullpen","var(--gold)"]])}
+  ${fig("Youth vs wins",sc2.svg||sc2,"Average roster age vs. wins."+rtxt(sc2.r))}
+  ${fig("Roster continuity",turnover,"Share of each season's listed players who were also on the previous season's roster.")}
+  ${fig(`The ${core} core`,survive,`How many players from the ${core} roster were still Orioles each season.`)}
+  ${fig("Star power",stars,"All-Star selections per season, with wins underneath.")}
+  ${fig("Team home runs",pow,"Total home runs by the hitters listed each season.")}
+  ${fig("Rotation vs bullpen ERA",pitchC,"Average ERA of starters and relievers each season.",[["Rotation","var(--navy-2)"],["Bullpen","var(--gold)"]])}
+  ${fig("Production by lineup slot",slotC,"Average home runs from each batting-order slot (average OPS underneath).")}
+  ${fig("Rookie classes",rook,"Players marked as rookies each season.")}
+  </div>`;
+}
+
+/* ---------- league ---------- */
+function vLeague(){
+  const Y=uniq(DB.finalists.map(f=>f.y).concat(DB.playoffs.map(p=>p.y))).sort((a,b)=>b-a);
+  const win=(y,a,l)=>DB.finalists.find(f=>f.y===y&&f.award===a&&f.lg===l&&f.winner);
+  const wcell=f=>f?`${f.team===DB.TEAM&&DB.nameToPid[f.name]?plink(DB.nameToPid[f.name],f.name):esc(f.name)} <span class="muted small">${esc(abbr(f.team))}</span>`:"";
+  const awardRows=Y.map(y=>`<tr><td class="t">${ylink(y)}</td><td class="t">${wcell(win(y,"MVP","AL"))}</td><td class="t">${wcell(win(y,"MVP","NL"))}</td><td class="t">${wcell(win(y,"Cy Young","AL"))}</td><td class="t">${wcell(win(y,"Cy Young","NL"))}</td></tr>`).join("");
+  const ws=DB.playoffs.filter(p=>p.round==="World Series");
+  const wsCols=[{k:"y",label:"Year",t:1,f:v=>ylink(v)},{k:"winner",label:"Champion",t:1,f:v=>`<a href="#/team/${teamSlug(v)}">${teamName(v)}</a>`},{k:"loser",label:"Runner-up",t:1,f:v=>v?`<a href="#/team/${teamSlug(v)}">${teamName(v)}</a>`:""},{k:"score",label:"Series",t:1}];
+  const teams={};const bump=(t,k)=>{if(!t)return;teams[t]=teams[t]||{team:t,ws:0,pen:0,lcs:0,fin:0,aw:0,c99:0};teams[t][k]++};
+  DB.playoffs.forEach(p=>{bump(p.ta,"lcs");bump(p.tb,"lcs");if(p.round==="World Series"){bump(p.winner,"ws");bump(p.ta,"pen");bump(p.tb,"pen")}});
+  DB.finalists.forEach(f=>{bump(f.team,"fin");if(f.winner)bump(f.team,"aw")});DB.club.forEach(c=>bump(c.team,"c99"));
+  const tcols=[{k:"team",label:"Team",t:1,f:v=>`<a href="#/team/${teamSlug(v)}">${teamName(v)}</a>`},{k:"ws",label:"WS titles",lead:"max"},{k:"pen",label:"WS trips",lead:"max"},{k:"lcs",label:"LCS/WS series",lead:"max"},{k:"aw",label:"Awards won",lead:"max"},{k:"fin",label:"Finalists",lead:"max"},{k:"c99",label:"99 Club",lead:"max"}];
+  const rep={};DB.finalists.forEach(f=>{const k=f.name;rep[k]=rep[k]||{name:k,n:0,won:0,teams:new Set(),years:[]};rep[k].n++;if(f.winner)rep[k].won++;rep[k].teams.add(abbr(f.team));rep[k].years.push(f.y)});
+  const repRows=Object.values(rep).filter(r=>r.n>=2).map(r=>Object.assign(r,{teamsS:[...r.teams].join(", "),span:`${Math.min(...r.years)}–${Math.max(...r.years)}`}));
+  const rcols=[{k:"name",label:"Player",t:1,f:v=>DB.nameToPid[v]?plink(DB.nameToPid[v],v):esc(v)},{k:"n",label:"Finalist",lead:"max"},{k:"won",label:"Won",lead:"max"},{k:"teamsS",label:"Teams",t:1},{k:"span",label:"Span",t:1}];
+  const clubY=uniq(DB.club.map(c=>c.y)).sort((a,b)=>b-a);
+  const alumni=DB.players.filter(p=>p.alumni.length).flatMap(p=>p.alumni.map(a=>({pid:p.pid,name:p.name,y:a.y,team:a.team,what:a.award==="99 Club"?"99 Club":`${ord(a.rank)}, ${a.lg} ${a.award}`,last:p.last})));
+  const acols=[{k:"name",label:"Former Oriole",t:1,f:(v,r)=>plink(r.pid,v)},{k:"y",label:"Year",f:v=>ylink(v)},{k:"team",label:"With",t:1,f:v=>`<a href="#/team/${teamSlug(v)}">${esc(v)}</a>`},{k:"what",label:"Recognition",t:1},{k:"last",label:"Last O's season"}];
+  return `<div class="crumbs"><a href="#/">Home</a> / Around the League</div><h1>Around the League</h1>
+  <h2>Award winners</h2><div class="tw"><table class="st"><thead><tr><th class="t">Year</th><th class="t">AL MVP</th><th class="t">NL MVP</th><th class="t">AL Cy Young</th><th class="t">NL Cy Young</th></tr></thead><tbody>${awardRows}</tbody></table></div>
+  <div class="grid g2"><div><h2>World Series history</h2>${table(wsCols,ws,{sort:"y",dir:-1,rowClass:p=>p.winner===DB.TEAM||p.loser===DB.TEAM?"mine":""})}</div>
+  <div><h2>Former Orioles elsewhere</h2>${alumni.length?table(acols,alumni,{sort:"y",dir:-1}):`<p class="muted">No former Orioles have shown up on award lists or the 99 Club yet.</p>`}</div></div>
+  <h2>Franchise scoreboard <span class="h-note">Counts from LCS, World Series, award finalist and 99 Club records</span></h2>${table(tcols,Object.values(teams),{sort:"ws",dir:-1,leaders:true,rowClass:t=>t.team===DB.TEAM?"mine":""})}
+  <h2>Repeat award finalists</h2>${repRows.length?table(rcols,repRows,{sort:"n",dir:-1,leaders:true}):`<p class="muted">No repeat finalists yet.</p>`}
+  <h2>99 Club by season</h2>${clubY.length?clubY.map(y=>`<p><b>${ylink(y)}:</b> ${DB.club.filter(c=>c.y===y).map(c=>`<span class="bdg ${c.team===DB.TEAM?"o":"g"}" style="margin:2px">${esc(c.name)} ${esc(c.pos||"")}, ${esc(abbr(c.team))}</span>`).join(" ")}</p>`).join(""):`<p class="muted">No 99 Club records yet.</p>`}`;
+}
+
+/* ---------- hall of fame ---------- */
+function vHof(){
+  const hof=DB.players.filter(p=>p.hof).sort(by(p=>p.legacy,-1));
+  const pl=p=>{const hasCareer=isNum(p.hofH)||isNum(p.hofHR);const dd=(l,v)=>`<div><dt>${l}</dt><dd>${v==null||v===""?"—":v}</dd></div>`;
+    return `<a class="plaque" href="#/player/${p.pid}" style="color:inherit;text-decoration:none;display:block"><span class="num">${p.jersey!=null?esc(p.jersey):""}</span><h3>${esc(p.name)}</h3><div class="pos">${esc(p.pos||p.ppos||"")}${p.first?`, Orioles ${p.first}–${p.last} on record`:", pre-"+DB.years[0]+" Oriole"}</div>
+    ${hasCareer?`<dl>${dd("H",p.hofH)}${dd("HR",p.hofHR)}${dd("AVG",fAvg(p.hofAVG))}${dd("OBP",fAvg(p.hofOBP))}${dd("SLG",fAvg(p.hofSLG))}</dl>`:`<dl>${dd("HR*",p.HR)}${dd("AVG*",fAvg(p.AVG))}${dd("OPS*",fAvg(p.OPS))}${dd("AS",p.as)}${dd("Rings",p.rings)}</dl><p class="small muted">*Tracked seasons only</p>`}
+    <div class="badges">${p.as?`<span class="bdg n">${p.as}× All-Star</span>`:""}${p.rings?`<span class="bdg o">${p.rings}× champion</span>`:""}${p.won.map(f=>`<span class="bdg o">${f.y} ${esc(f.award)}</span>`).join("")}</div></a>`};
+  return `<div class="crumbs"><a href="#/">Home</a> / Hall of Fame</div><h1>Orioles Hall of Fame</h1><p class="muted">Career lines come from the Hall of Fame record and cover every season, including before ${DB.years[0]}.</p>
+  ${hof.length?`<div class="plaques">${hof.map(pl).join("")}</div>`:`<p class="muted">No Hall of Famers marked yet. Check the Hall of Fame box on the Players tab to add one.</p>`}`;
+}
+/* ---------- projections ---------- */
+function deltaCurve(type){
+  const d={};const all=[];
+  DB.players.forEach(p=>{const rows=type==="P"?p.pitRows:p.hitRows;for(let i=1;i<rows.length;i++){const a=rows[i-1],b=rows[i];if(b.y===a.y+1&&isNum(a.ovr)&&isNum(b.ovr)&&isNum(a.age)){(d[a.age]=d[a.age]||[]).push(b.ovr-a.ovr);all.push(b.ovr-a.ovr)}}});
+  const base=all.length?mean(all):0;
+  const est=age=>{let s=0,w=0;[[age-1,1],[age,2],[age+1,1]].forEach(([a,wt])=>{if(d[a]){s+=sum(d[a])*wt;w+=d[a].length*wt}});if(!w)return base;const k=Math.min(1,w/8);return k*(s/w)+(1-k)*base};
+  return {est,d,base,n:all.length};
+}
+let CURVES=null;
+function curves(){if(!CURVES||CURVES.db!==DB)CURVES={db:DB,H:deltaCurve("H"),P:deltaCurve("P")};return CURVES}
+function projectRow(r){const c=curves()[r.pit?"P":"H"];if(!isNum(r.ovr)||!isNum(r.age))return null;const ch=c.est(r.age);const proj=Math.max(40,Math.min(99,Math.round(r.ovr+ch)));return {age:r.age+1,ovr:proj,delta:proj-r.ovr,raw:ch}}
+function projFor(p){const last=DB.years[DB.years.length-1];const r=p.rows.find(x=>x.y===last);return r?projectRow(r):null}
+function arrow(d){return d>0?`<span class="up">+${d}</span>`:d<0?`<span class="down">${d}</span>`:`<span class="flat">0</span>`}
+function vProjections(){
+  const last=DB.years[DB.years.length-1],next=last+1;const rows=(DB.byYear[last]||[]).map(r=>Object.assign({},r,{proj:projectRow(r)})).filter(r=>r.proj);
+  const c=curves();
+  const unit=(f)=>{const a=rows.filter(f);return {now:mean(a.map(r=>r.ovr)),proj:mean(a.map(r=>r.proj.ovr))}};
+  const lu=unit(r=>r.role==="Lineup"),rot=unit(r=>r.role==="SP"),pen=unit(r=>r.role==="RP");
+  const kpi=(l,u)=>`<div class="kpi"><div class="v">${fOne(u.proj)||"—"}</div><div class="l">${l} projected (${fOne(u.now)||"—"} in ${last}, ${u.proj!=null&&u.now!=null?(u.proj-u.now>=0?"+":"")+(u.proj-u.now).toFixed(1):""})</div></div>`;
+  const cols=[{k:"name",label:"Player",t:1,f:(v,r)=>nameCell(r)},{k:"pos",label:"Pos",t:1},{k:"age",label:`Age in ${next}`,v:r=>r.proj.age},{k:"ovr",label:`${last} OVR`},{k:"p",label:`${next} proj.`,v:r=>r.proj.ovr,lead:"max"},{k:"d",label:"Change",v:r=>r.proj.delta,f:v=>arrow(v)},{k:"trend",label:"Outlook",t:1,v:r=>r.proj.raw>=0.75?"Rising":r.proj.raw<=-0.75?"Declining":"Holding"}];
+  const ages=uniq(Object.keys(c.H.d).concat(Object.keys(c.P.d)).map(Number)).sort((a,b)=>a-b);
+  const chart=ages.length?lineChart({series:[{name:"Hitters",color:"var(--orange)",points:ages.map(a=>({x:a,y:c.H.est(a),tip:`Hitters at ${a}: ${c.H.est(a)>=0?"+":""}${c.H.est(a).toFixed(1)} per year`}))},{name:"Pitchers",color:"var(--navy-2)",points:ages.map(a=>({x:a,y:c.P.est(a),tip:`Pitchers at ${a}: ${c.P.est(a)>=0?"+":""}${c.P.est(a).toFixed(1)} per year`}))}],ref:0,yfmt:v=>(v>0?"+":"")+v,label:"Expected yearly change in overall by age"}):"";
+  const risers=rows.slice().sort(by(r=>r.proj.delta,-1)).slice(0,5),fallers=rows.slice().sort(by(r=>r.proj.delta,1)).slice(0,5);
+  const li=r=>`<li><span class="rk"></span><span class="nm">${plink(r.pid,r.name)} <span class="muted small">${esc(r.pos)}, ${r.proj.age}</span></span><span class="vl">${r.ovr} → ${r.proj.ovr}</span></li>`;
+  return `<div class="crumbs"><a href="#/">Home</a> / Projections</div><h1>${next} projections</h1>
+  <p class="muted">What the ${last} roster would look like a year older, if everyone came back. Each player's overall moves by how much Orioles at his age have historically gained or lost from one season to the next.</p>
+  <div class="kpis">${kpi("Lineup",lu)}${kpi("Rotation",rot)}${kpi("Bullpen",pen)}</div>
+  <div class="grid g2"><div>${fig("Expected yearly change by age",chart,`Built from ${c.H.n} hitter and ${c.P.n} pitcher season-to-season changes. Ages with few examples lean toward the overall average.`,[["Hitters","var(--orange)"],["Pitchers","var(--navy-2)"]])}</div>
+  <div class="grid" style="grid-template-columns:1fr 1fr;align-content:start"><div class="lb"><h3>Biggest risers</h3><ol>${risers.map(li).join("")}</ol></div><div class="lb"><h3>Biggest decliners</h3><ol>${fallers.map(li).join("")}</ol></div></div></div>
+  <h2>Every ${last} Oriole, projected</h2>${rows.length?table(cols,rows,{sort:"p",dir:-1,leaders:true,note:`A projection, not a forecast: injuries, trades and the game's own progression aren't modeled. Ratings are capped at 99.`}):`<p class="muted">No ${last} roster to project yet.</p>`}`;
+}
+
+/* ---------- timeline ---------- */
+function tlHead(s){const d=esc(s.div||"division");const fin=s.fin?`${ord(s.fin)} in the ${d}`:"";
+  if(s.res==="champ")return "World Series champions"+(fin?` (${fin})`:"");
+  if(s.res==="pennant")return "Pennant winners, lost the World Series"+(fin?` (${fin})`:"");
+  if(s.res==="lcs")return esc(s.resLabel)+(fin?` (${fin})`:"");
+  if(s.res==="div")return `Won the ${d}`;
+  return fin||"Season on record"}
+function vTimeline(){
+  const items=[];
+  const pre=DB.players.filter(p=>p.hof&&!p.rows.length);
+  if(pre.length)items.push(`<li><div class="yr pre"><small>Before</small>${DB.years[0]}</div><div class="ev"><h3>The early years</h3><p>Hall of Famers whose Orioles careers came before the notebook started:</p><ul>${pre.map(p=>`<li>${plink(p.pid,p.name)} (${esc(p.ppos||"")}${p.jersey!=null?", No. "+esc(p.jersey):""})${isNum(p.hofHR)?`: ${p.hofH} hits, ${p.hofHR} HR, ${fAvg(p.hofAVG)}`:""}</li>`).join("")}</ul></div></li>`);
+  let hrRec=null,svRec=null,winRec=null;
+  DB.seasons.forEach(s=>{
+    const y=s.y,rows=DB.byYear[y]||[];const ev=[];
+    if(s.ws){const opp=s.ws.ta===DB.TEAM?s.ws.tb:s.ws.ta;if(s.res==="champ")ev.push(`<b>World Series champions</b>, beating the ${esc(opp)}${s.ws.score?" "+s.ws.score:""}.`);else if(s.res==="pennant")ev.push(`Won the pennant, then lost the World Series to the ${esc(opp)}${s.ws.score?" "+s.ws.score:""}.`);else ev.push(`The ${esc(s.ws.winner)} won the World Series.`)}
+    DB.finalists.filter(f=>f.y===y&&f.team===DB.TEAM).forEach(f=>{const pid=DB.nameToPid[f.name];ev.push(`${pid?plink(pid,f.name):esc(f.name)} ${f.winner?"won":"finished "+ord(f.rank)+" for"} the ${esc(f.lg)} ${esc(f.award)}.`)});
+    const hrTop=maxBy(rows.filter(r=>r.hit&&isNum(r.hr)),r=>r.hr);if(hrTop&&hrRec&&hrTop.hr>hrRec.hr)ev.push(`New single-season home run record: ${plink(hrTop.pid,hrTop.name)} hit ${hrTop.hr}, passing ${esc(hrRec.name)}'s ${hrRec.hr}.`);if(hrTop&&(!hrRec||hrTop.hr>hrRec.hr))hrRec=hrTop;
+    const svTop=maxBy(rows.filter(r=>isNum(r.sv)),r=>r.sv);if(svTop&&svRec&&svTop.sv>svRec.sv)ev.push(`New single-season saves record: ${plink(svTop.pid,svTop.name)} saved ${svTop.sv}.`);if(svTop&&(!svRec||svTop.sv>svRec.sv))svRec=svTop;
+    if(isNum(s.w)&&winRec&&s.w>winRec.w)ev.push(`Most wins in a season on record (${s.w}, topping ${winRec.y}'s ${winRec.w}).`);if(isNum(s.w)&&(!winRec||s.w>winRec.w))winRec=s;
+    const as=rows.filter(r=>r.as);if(as.length)ev.push(`All-Stars: ${as.map(r=>plink(r.pid,r.name)).join(", ")}.`);
+    const n99=rows.filter(r=>r.is99);if(n99.length)ev.push(`Rated 99: ${n99.map(r=>plink(r.pid,r.name)).join(", ")}.`);
+    const rook=rows.filter(r=>r.rookie);if(rook.length)ev.push(`Rookies: ${rook.map(r=>plink(r.pid,r.name)).join(", ")}.`);
+    DB.players.filter(p=>p.hof&&p.last===y&&y!==DB.years[DB.years.length-1]).forEach(p=>ev.push(`Last season in Baltimore for Hall of Famer ${plink(p.pid,p.name)}.`));
+    const cls={champ:"champ",pennant:"pennantwin",div:"div",lcs:"div",miss:"miss"}[s.res]||"miss";
+    items.push(`<li><div class="yr ${cls}"><a href="#/season/${y}">${y}<small>${isNum(s.w)?s.w+"–"+s.l:""}</small></a></div><div class="ev"><h3>${tlHead(s)}</h3>${s.sum?`<p>${esc(s.sum)}</p>`:""}${ev.length?`<ul>${ev.map(e=>`<li>${e}</li>`).join("")}</ul>`:""}</div></li>`);
+  });
+  return `<div class="crumbs"><a href="#/">Home</a> / Timeline</div><h1>Franchise timeline</h1><p class="muted">Every season in order: your wrap-ups plus titles, awards, records, All-Stars and Hall of Fame moments pulled from the database.</p><ol class="tl">${items.join("")}</ol>`;
+}
+
+/* ---------- glossary ---------- */
+function vGlossary(){
+  const T=[["OVR","Overall rating","The player's in-game overall rating that season, from 0 to 99."],["AVG","Batting average","Hits divided by at-bats."],["OBP","On-base percentage","How often a hitter reaches base."],["SLG","Slugging percentage","Total bases per at-bat; rewards extra-base hits."],["OPS","On-base plus slugging","OBP + SLG. A quick read on overall hitting."],["ISO","Isolated power","SLG minus AVG: how much of a hitter's production is extra-base power."],["OPS+","Team-relative OPS","A hitter's OPS divided by the average OPS of that season's Orioles starting lineup, times 100. 100 is team average; 120 is 20% better than his lineup mates."],["ERA","Earned run average","Earned runs allowed per nine innings. Lower is better."],["ERA+","Team-relative ERA","The average ERA of that season's Orioles staff divided by the pitcher's ERA, times 100. Above 100 is better than the staff average."],["W-L%","Winning percentage","Wins divided by decisions."],["SV","Saves","Games finished while protecting a lead."],["HLD","Holds","Relief appearances that protect a lead before handing off."],["SO","Strikeouts","Recorded from 2035 on, when the notebook started tracking them."],["AS","All-Star","Made the All-Star Game that season (underlined in the notebook)."],["Top 10 vote","Award vote","Finished in the top 10 of MVP, Cy Young or Reliever of the Year voting (starred in the notebook, or listed as a finalist)."],["Rings","World Series rings","World Series titles the Orioles won while the player was on the roster."],["99 Club","99 overall","Players rated 99 that season, league-wide."],["Tracked","Tracked seasons","Seasons recorded in the database, from the first notebook season on. Career totals on player pages use tracked seasons unless marked as Hall of Fame figures."],["HOF career","Hall of Fame career line","Full-career hits, home runs, AVG, OBP and SLG from the Orioles Hall of Fame list, including seasons before tracking began."],["Season average","Rate stats over a career","Career AVG, OBP, SLG and ERA here are averages of the player's season figures, because at-bats and innings aren't tracked."],["Legacy score","Franchise impact","1 point per season, 4 per All-Star selection, 3 per top 10 award vote, 3 per season at 99, 2 per ring, 8 per MVP or Cy Young won as an Oriole, 3 per other finalist finish, and 10 for the Hall of Fame."],["Similarity","Similar Orioles","A score out of 1000 comparing peak and average overall, tenure and per-season production with every other Oriole at the same position group."],["Projection","Next-season outlook","Each player's overall plus the average year-to-year change for Orioles his age (hitters and pitchers separately). Ages with few examples lean toward the overall average."],["Roster continuity","Returning players","Share of a season's listed players who were also on the previous season's roster."]];
+  return `<div class="crumbs"><a href="#/">Home</a> / Glossary</div><h1>Glossary</h1><p class="muted">What every stat and label on Baltimore Reference means.</p><div class="gloss">${T.map(([a,b,c])=>`<dl class="term"><dt>${esc(a)}<span>${esc(b)}</span></dt><dd>${esc(c)}</dd></dl>`).join("")}</div>`;
+}
+
+/* ---------- player card image ---------- */
+const POSNAME={C:"Catcher","1B":"First base","2B":"Second base","3B":"Third base",SS:"Shortstop",LF:"Left field",CF:"Center field",RF:"Right field",DH:"Designated hitter",SP:"Starting pitcher",RP:"Relief pitcher",LR:"Long relief",MR:"Middle relief",SU:"Setup man",CP:"Closer"};
+async function drawCard(p){
+  try{await Promise.all([document.fonts.load('600 120px "Oswald"'),document.fonts.load('400 30px "IBM Plex Sans Condensed"'),document.fonts.load('600 30px "IBM Plex Sans Condensed"')])}catch(e){}
+  const W=1080,H=1350,cv=document.createElement("canvas");cv.width=W;cv.height=H;const x=cv.getContext("2d");
+  const NAVY="#0E2A4E",OR="#DF4601",CREAM="#FBF8F1",GOLD="#D4A72C",MUTE="#A9B8CF",DISP='"Oswald","Arial Narrow",Impact,sans-serif',BODY='"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif';
+  x.fillStyle=NAVY;x.fillRect(0,0,W,H);
+  x.fillStyle=p.hof?GOLD:OR;x.fillRect(0,0,W,16);
+  x.globalAlpha=.18;x.fillStyle=OR;x.textAlign="right";x.textBaseline="alphabetic";x.font=`700 470px ${DISP}`;x.fillText(p.jersey!=null?String(p.jersey):(p.pos||""),W-40,470);x.globalAlpha=1;
+  x.textAlign="left";x.fillStyle=MUTE;x.font=`500 30px ${BODY}`;x.fillText("Baltimore Reference",72,92);
+  const parts=p.name.split(" ");const first=parts.length>1?parts.slice(0,-1).join(" "):"";const lastN=parts[parts.length-1];
+  x.fillStyle=CREAM;x.font=`500 64px ${DISP}`;if(first)x.fillText(first,68,250);
+  let fs=170;x.font=`600 ${fs}px ${DISP}`;while(x.measureText(lastN).width>W-140&&fs>70){fs-=6;x.font=`600 ${fs}px ${DISP}`}x.fillText(lastN,64,250+fs*.95);
+  let y=250+fs*.95+64;
+  x.fillStyle=MUTE;x.font=`400 34px ${BODY}`;const sub=[POSNAME[p.pos||p.ppos]||p.pos||p.ppos||"",p.first?`Orioles ${p.first}–${p.last}`:`Oriole before ${DB.years[0]}`,p.seasons?`${p.seasons} season${p.seasons>1?"s":""}`:""].filter(Boolean).join("   |   ");x.fillText(sub,72,y);
+  y+=40;
+  const badges=[];if(p.hof)badges.push(["Hall of Fame"+(p.jersey!=null?", No. "+p.jersey:""),GOLD,NAVY]);p.won.forEach(f=>badges.push([`${f.y} ${f.lg} ${f.award}`,OR,"#fff"]));if(p.rings)badges.push([`${p.rings}× champion`,OR,"#fff"]);if(p.as)badges.push([`${p.as}× All-Star`,CREAM,NAVY]);if(p.n99)badges.push([`${p.n99}× rated 99`,GOLD,NAVY]);
+  let bx=72,by=y+10;x.font=`600 28px ${BODY}`;badges.slice(0,7).forEach(([t,bg,fg])=>{const w=x.measureText(t).width+32;if(bx+w>W-72){bx=72;by+=58}x.fillStyle=bg;x.beginPath();x.roundRect?x.roundRect(bx,by,w,46,4):x.rect(bx,by,w,46);x.fill();x.fillStyle=fg;x.fillText(t,bx+16,by+32);bx+=w+12});
+  y=(badges.length?by+46:y)+50;
+  const isP=p.type==="P";let stats;
+  if(p.rows.length)stats=isP?[["W–L",`${p.W}–${p.L}`],["ERA",fEra(p.ERA)],["Saves",p.SV],["Strikeouts",p.K],["ERA+",fInt(p.ERAp)],["Peak OVR",p.peak]]:[["Seasons",p.seasons],["Home runs",p.HR],["AVG",fAvg(p.AVG)],["OPS",fAvg(p.OPS)],["OPS+",fInt(p.OPSp)],["Peak OVR",p.peak]];
+  else stats=[["Hits",p.hofH],["Home runs",p.hofHR],["AVG",fAvg(p.hofAVG)],["OBP",fAvg(p.hofOBP)],["SLG",fAvg(p.hofSLG)],["OPS",isNum(p.hofOBP)&&isNum(p.hofSLG)?fAvg(p.hofOBP+p.hofSLG):"—"]];
+  const bw=(W-144-2*20)/3,bh=150;stats.forEach(([l,v],i)=>{const cx=72+(i%3)*(bw+20),cy=y+Math.floor(i/3)*(bh+20);x.fillStyle="rgba(255,255,255,.06)";x.fillRect(cx,cy,bw,bh);x.fillStyle=OR;x.fillRect(cx,cy,6,bh);x.fillStyle=MUTE;x.font=`400 28px ${BODY}`;x.fillText(l,cx+26,cy+44);x.fillStyle=CREAM;x.font=`500 72px ${DISP}`;x.fillText(v==null||v===""?"—":String(v),cx+24,cy+122)});
+  y+=2*bh+20+60;
+  const pts=p.rows.filter(r=>isNum(r.age)&&isNum(r.ovr));
+  const cTop=y+40,cBot=H-130,cL=110,cR=W-72;
+  if(pts.length>1){x.fillStyle=MUTE;x.font=`400 28px ${BODY}`;x.fillText("Overall rating by age",72,y+10);
+    const a0=Math.min(...pts.map(q=>q.age)),a1=Math.max(...pts.map(q=>q.age));const o0=Math.max(40,Math.min(...pts.map(q=>q.ovr))-4),o1=Math.min(100,Math.max(...pts.map(q=>q.ovr))+2);
+    const X=a=>cL+(a-a0)/((a1-a0)||1)*(cR-cL),Y=o=>cBot-(o-o0)/((o1-o0)||1)*(cBot-cTop);
+    x.strokeStyle="rgba(255,255,255,.15)";x.lineWidth=2;[o0,Math.round((o0+o1)/2),o1].forEach(o=>{x.beginPath();x.moveTo(cL,Y(o));x.lineTo(cR,Y(o));x.stroke();x.fillStyle=MUTE;x.font=`400 24px ${BODY}`;x.textAlign="right";x.fillText(String(Math.round(o)),cL-14,Y(o)+8);x.textAlign="left"});
+    x.beginPath();pts.forEach((q,i)=>i?x.lineTo(X(q.age),Y(q.ovr)):x.moveTo(X(q.age),Y(q.ovr)));x.lineTo(X(pts[pts.length-1].age),cBot);x.lineTo(X(pts[0].age),cBot);x.closePath();x.fillStyle="rgba(223,70,1,.22)";x.fill();
+    x.beginPath();pts.forEach((q,i)=>i?x.lineTo(X(q.age),Y(q.ovr)):x.moveTo(X(q.age),Y(q.ovr)));x.strokeStyle=OR;x.lineWidth=6;x.lineJoin="round";x.stroke();
+    pts.forEach(q=>{x.beginPath();x.arc(X(q.age),Y(q.ovr),q.is99?13:9,0,Math.PI*2);x.fillStyle=q.is99?GOLD:q.as?CREAM:OR;x.fill();x.lineWidth=3;x.strokeStyle=NAVY;x.stroke()});
+    x.fillStyle=MUTE;x.font=`400 24px ${BODY}`;x.textAlign="center";pts.forEach((q,i)=>{if(pts.length<=12||i%2===0)x.fillText(String(q.age),X(q.age),cBot+36)});x.textAlign="left";
+  }else{x.fillStyle=MUTE;x.font=`400 30px ${BODY}`;x.fillText(p.rows.length?`One tracked season (${p.first}).`:`Career line from the Orioles Hall of Fame record.`,72,y+40)}
+  x.fillStyle="rgba(255,255,255,.12)";x.fillRect(72,H-78,W-144,2);
+  x.fillStyle=MUTE;x.font=`400 26px ${BODY}`;x.fillText(p.rows.length?`Legacy score ${p.legacy}`:"Orioles Hall of Fame",72,H-36);x.textAlign="right";x.fillText("The Orioles dynasty, season by season",W-72,H-36);x.textAlign="left";
+  return cv;
+}
+async function saveBlob(blob,filename){
+  if(window.claude&&window.claude.use){try{const dl=await window.claude.use("downloads");if(dl){await dl.save({filename,data:blob});return "ok"}}catch(e){if(e&&e.code==="declined")return "declined";if(e&&e.code==="rate_limited")return "busy"}}
+  try{const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);return "ok"}catch(e){return "fail"}
+}
+async function openCard(pid){
+  const p=DB.P[pid];if(!p)return;
+  let dlg=document.getElementById("cardDlg");
+  if(!dlg){dlg=document.createElement("dialog");dlg.id="cardDlg";dlg.className="card-dlg";document.body.appendChild(dlg)}
+  dlg.innerHTML=`<div class="dlg-body"><h3>${esc(p.name)} player card</h3><p class="small muted">Building the card…</p></div>`;
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","");
+  const cv=await drawCard(p);const fname=p.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")+"-baltimore-reference.png";
+  dlg.innerHTML=`<div class="dlg-body"><img alt="${esc(p.name)} player card" src="${cv.toDataURL("image/png")}"><p class="small muted" id="dlgMsg" style="margin-top:8px"></p><div class="dlg-actions"><button class="btn ghost" type="button" data-close>Close</button><button class="btn" type="button" data-dl>Download PNG</button></div></div>`;
+  dlg.querySelector("[data-close]").onclick=()=>dlg.close?dlg.close():dlg.removeAttribute("open");
+  dlg.querySelector("[data-dl]").onclick=()=>cv.toBlob(async b=>{const r=await saveBlob(b,fname);const m=dlg.querySelector("#dlgMsg");if(m)m.textContent=r==="ok"?"Saved.":r==="declined"?"Download cancelled.":r==="busy"?"Another download prompt is open. Try again in a moment.":"This view can't save files. Long-press or right-click the image to save it instead."},"image/png");
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-card]");if(b)openCard(b.dataset.card)});
+/* ---------- trivia ---------- */
+let R=Math.random;
+function hashStr(t){let h=2166136261;for(let i=0;i<t.length;i++){h^=t.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const rnd=a=>a[Math.floor(R()*a.length)];
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(R()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function mk(q,a,pool,explain){const d=shuffle(uniq(pool.map(String)).filter(x=>x!==String(a))).slice(0,3);if(d.length<3)return null;return {q,a:String(a),opts:shuffle([String(a)].concat(d)),explain}}
+const GENS=[
+ ()=>{const ws=rnd(DB.playoffs.filter(p=>p.round==="World Series"&&p.winner));if(!ws)return null;const teams=uniq(DB.playoffs.flatMap(p=>[p.ta,p.tb]).concat(DB.finalists.map(f=>f.team)));return mk(`Who won the ${ws.y} World Series?`,ws.winner,teams,`The ${esc(ws.winner)} beat the ${esc(ws.loser)}${ws.score?" "+ws.score:""}. ${ylink(ws.y)}`)},
+ ()=>{const f=rnd(DB.finalists.filter(f=>f.winner));if(!f)return null;const pool=DB.finalists.filter(x=>x.award===f.award&&x.name!==f.name).map(x=>x.name);return mk(`Who won the ${f.y} ${f.lg} ${f.award}?`,f.name,pool,`${esc(f.name)} of the ${esc(f.team)} won it${f.type==="Pitcher"?` (${fEra(f.era)} ERA, ${f.w}–${f.l})`:` (${f.hr} HR, ${fAvg(f.avg)})`}. ${ylink(f.y)}`)},
+ ()=>{const s=rnd(DB.seasons.filter(s=>isNum(s.w)));if(!s)return null;return mk(`What was the Orioles' record in ${s.y}?`,`${s.w}–${s.l}`,DB.seasons.filter(x=>isNum(x.w)&&x.y!==s.y).map(x=>`${x.w}–${x.l}`),`They went ${s.w}–${s.l}: ${esc(s.resLabel)}. ${ylink(s.y)}`)},
+ ()=>{const y=rnd(DB.years);const h=(DB.byYear[y]||[]).filter(r=>r.hit&&isNum(r.hr)).sort(by(r=>r.hr,-1));if(h.length<4||h[0].hr===h[1].hr)return null;return mk(`Who led the Orioles in home runs in ${y}?`,h[0].name,h.slice(1).map(r=>r.name),`${esc(h[0].name)} hit ${h[0].hr}. ${ylink(y)}`)},
+ ()=>{const y=rnd(DB.years);const cp=(DB.byYear[y]||[]).find(r=>r.pos==="CP");if(!cp)return null;const pool=(DB.byYear[y]||[]).filter(r=>r.pit&&r.pid!==cp.pid).map(r=>r.name);return mk(`Who was the Orioles' closer in ${y}?`,cp.name,pool,`${esc(cp.name)} closed${isNum(cp.sv)?` and saved ${cp.sv}`:""}. ${ylink(y)}`)},
+ ()=>{const h=DB.players.filter(p=>p.hof&&p.jersey!=null);const p=rnd(h);if(!p)return null;return mk(`Which Orioles Hall of Famer wore No. ${p.jersey}?`,p.name,h.filter(x=>x!==p).map(x=>x.name),`${esc(p.name)} wore No. ${p.jersey}. ${plink(p.pid,"Player page")}`)},
+ ()=>{const p=rnd(DB.players.filter(p=>p.seasons>=3));if(!p)return null;const n=p.seasons;return mk(`How many tracked seasons did ${p.name} spend with the Orioles?`,n,[n-2,n-1,n+1,n+2,n+3].filter(x=>x>0),`${esc(p.name)} played ${n} seasons (${p.first}–${p.last}). ${plink(p.pid,"Player page")}`)},
+ ()=>{const S=DB.seasons.filter(s=>isNum(s.w));if(S.length<4)return null;const best=Math.random()<.5;const s=S.slice().sort(by(x=>x.w,best?-1:1))[0];if(S.filter(x=>x.w===s.w).length>1)return null;return mk(`Which season produced the Orioles' ${best?"most":"fewest"} wins on record?`,s.y,S.filter(x=>x!==s).map(x=>x.y),`${s.y}: ${s.w}–${s.l}. ${ylink(s.y)}`)},
+ ()=>{const ps=DB.players.filter(p=>p.as>0).sort(by(p=>p.as,-1));if(ps.length<4||ps[0].as===ps[1].as)return null;return mk("Which Oriole has made the most All-Star teams on record?",ps[0].name,ps.slice(1,8).map(p=>p.name),`${esc(ps[0].name)}: ${ps[0].as} selections. ${plink(ps[0].pid,"Player page")}`)},
+ ()=>{const r=rnd(DB.roster.filter(r=>r.role==="Lineup"));if(!r)return null;const pool=DB.roster.filter(x=>x.role==="Lineup"&&x.pid!==r.pid&&(x.pos===r.pos||x.y===r.y)).map(x=>x.name);return mk(`Who was the Orioles' starting ${r.pos} in ${r.y}?`,r.name,pool,`${esc(r.name)} started at ${esc(r.pos)} (${r.hr} HR, ${fAvg(r.avg)}). ${ylink(r.y)}`)},
+ ()=>{const ws=rnd(DB.playoffs.filter(p=>p.round==="World Series"&&(p.ta===DB.TEAM||p.tb===DB.TEAM)));if(!ws)return null;const opp=ws.ta===DB.TEAM?ws.tb:ws.ta;const teams=uniq(DB.playoffs.filter(p=>p.lg==="NL").flatMap(p=>[p.ta,p.tb]));return mk(`Who did the Orioles face in the ${ws.y} World Series?`,opp,teams,`The Orioles ${ws.winner===DB.TEAM?"beat":"lost to"} the ${esc(opp)}${ws.score?" "+ws.score:""}. ${ylink(ws.y)}`)},
+ ()=>{const r=DB.roster.filter(r=>isNum(r.sv)).sort(by(r=>r.sv,-1));if(r.length<4||r[0].sv===r[1].sv)return null;return mk("Who holds the Orioles' single-season saves record?",`${r[0].name} (${r[0].y})`,r.slice(1,8).map(x=>`${x.name} (${x.y})`),`${esc(r[0].name)} saved ${r[0].sv} in ${ylink(r[0].y)}.`)},
+ ()=>{const r=rnd(DB.roster.filter(r=>r.rookie));if(!r)return null;const pool=(DB.byYear[r.y]||[]).filter(x=>!x.rookie).map(x=>x.name);return mk(`Which of these players was an Orioles rookie in ${r.y}?`,r.name,pool,`${esc(r.name)} was a rookie ${esc(r.pos)} in ${ylink(r.y)}.`)},
+ ()=>{const c=rnd(DB.club);if(!c)return null;const inClub=new Set(DB.club.filter(x=>x.y===c.y).map(x=>x.name));const pool=DB.finalists.filter(f=>f.y===c.y&&!inClub.has(f.name)).map(f=>f.name);return mk(`Which player was in the ${c.y} 99 Club?`,c.name,pool,`${esc(c.name)} (${esc(c.pos||"")}, ${esc(c.team)}) was rated 99. ${ylink(c.y)}`)},
+ ()=>{const al=DB.players.filter(p=>p.alumni.some(a=>a.award!=="99 Club"));const p=rnd(al);if(!p)return null;const a=rnd(p.alumni.filter(a=>a.award!=="99 Club"));const pool=DB.finalists.filter(f=>f.y===a.y&&f.name!==p.name).map(f=>f.name);return mk(`Which former Oriole was a ${a.y} ${a.lg} ${a.award} finalist with the ${a.team}?`,p.name,pool,`${esc(p.name)} finished ${ord(a.rank)} after leaving Baltimore. ${plink(p.pid,"Player page")}`)},
+ ()=>{const y=rnd(DB.years);const r=(DB.byYear[y]||[]).filter(r=>r.role==="SP"&&isNum(r.ovr)).sort(by(r=>r.ovr,-1));if(r.length<4||r[0].ovr===r[1].ovr)return null;return mk(`Who was the highest-rated starting pitcher in the ${y} Orioles rotation?`,r[0].name,r.slice(1).map(x=>x.name),`${esc(r[0].name)} was rated ${r[0].ovr}. ${ylink(y)}`)},
+ ()=>{const n=DB.seasons.filter(s=>s.res==="champ").length;return mk(`How many World Series titles did the Orioles win from ${DB.years[0]} to ${DB.years[DB.years.length-1]}?`,n,[n-1,n+1,n+2,n+3,n-2].filter(x=>x>=0),`${n}: ${DB.seasons.filter(s=>s.res==="champ").map(s=>ylink(s.y)).join(", ")||"none"}.`)},
+ ()=>{const p=rnd(DB.playoffs.filter(p=>p.round!=="World Series"&&p.winner));if(!p)return null;const teams=uniq(DB.playoffs.filter(x=>x.lg===p.lg).flatMap(x=>[x.ta,x.tb]));return mk(`Who won the ${p.y} ${p.lg}CS?`,p.winner,teams,`The ${esc(p.winner)} beat the ${esc(p.loser)}${p.score?" "+p.score:""}. ${ylink(p.y)}`)},
+ ()=>{const s=rnd(DB.seasons.filter(s=>s.fin));if(!s)return null;return mk(`Where did the Orioles finish in the ${s.div||"division"} in ${s.y}?`,ord(s.fin),[1,2,3,4,5].map(ord),`${ord(s.fin)}${isNum(s.w)?`, at ${s.w}–${s.l}`:""}. ${ylink(s.y)}`)},
+ ()=>{const p=rnd(DB.players.filter(p=>p.first&&p.first>DB.years[0]));if(!p)return null;return mk(`In which season did ${p.name} first appear for the Orioles?`,p.first,DB.years.filter(y=>y!==p.first),`${esc(p.name)} debuted in ${ylink(p.first)}.`)},
+ ()=>{const r=DB.roster.filter(r=>r.hit&&isNum(r.hr)).sort(by(r=>r.hr,-1));if(r.length<4||r[0].hr===r[1].hr)return null;return mk("Which Oriole hit the most home runs in a single season on record?",`${r[0].name} (${r[0].y})`,r.slice(1,10).map(x=>`${x.name} (${x.y})`),`${esc(r[0].name)} hit ${r[0].hr} in ${ylink(r[0].y)}.`)},
+ ()=>{const p=rnd(DB.players.filter(p=>p.rings>0));if(!p)return null;return mk(`How many World Series rings did ${p.name} win with the Orioles?`,p.rings,[p.rings+1,p.rings+2,p.rings-1,p.rings+3].filter(x=>x>=0),`${p.rings}: ${p.ringYears.join(", ")}. ${plink(p.pid,"Player page")}`)},
+ ()=>{const y=rnd(DB.years);const r=(DB.byYear[y]||[]).filter(r=>r.as);const non=(DB.byYear[y]||[]).filter(r=>!r.as);if(!r.length||non.length<3)return null;const a=rnd(r);return mk(`Which of these Orioles was an All-Star in ${y}?`,a.name,non.map(x=>x.name),`${esc(a.name)} made the ${y} All-Star team. ${ylink(y)}`)},
+ ()=>{const f=rnd(DB.finalists.filter(f=>f.team===DB.TEAM));if(!f)return null;const pool=DB.finalists.filter(x=>x.y===f.y&&x.award===f.award&&x.name!==f.name).map(x=>x.name).concat((DB.byYear[f.y]||[]).map(r=>r.name));return mk(`Which Oriole was a ${f.y} ${f.lg} ${f.award} finalist?`,f.name,pool,`${esc(f.name)} finished ${ord(f.rank)}${f.winner?" and won":""}. ${ylink(f.y)}`)}
+];
+let QZ=null;
+const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function todayKey(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function prettyDate(k){const [y,m,d]=k.split("-").map(Number);return new Date(y,m-1,d).toLocaleDateString([], {month:"short",day:"numeric",year:"numeric"})}
+function dailyLog(){try{return JSON.parse(LS.get("bref-daily")||"{}")||{}}catch(e){return {}}}
+function saveDaily(key,rec){const log=dailyLog();log[key]=rec;const keys=Object.keys(log).sort();while(keys.length>90)delete log[keys.shift()];LS.set("bref-daily",JSON.stringify(log))}
+function streak(){const log=dailyLog();let d=new Date();let n=0;const k=x=>x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0");if(!(log[k(d)]&&log[k(d)].done))d.setDate(d.getDate()-1);while(log[k(d)]&&log[k(d)].done){n++;d.setDate(d.getDate()-1)}return n}
+function newRound(seed){R=seed?mulberry32(hashStr(seed)):Math.random;const out=[],seen=new Set();let tries=0;while(out.length<10&&tries<400){tries++;const g=rnd(GENS);let q=null;try{q=g()}catch(e){q=null}if(q&&!seen.has(q.q)){seen.add(q.q);out.push(q)}}R=Math.random;return {qs:out,i:0,answers:[],done:false}}
+function dailySeed(k){return "bref|"+k+"|"+DB.years.join(",")+"|"+DB.roster.length}
+function startDaily(){const k=todayKey();const q=newRound(dailySeed(k));q.mode="daily";q.date=k;const rec=dailyLog()[k];if(rec&&Array.isArray(rec.answers)){q.answers=rec.answers.slice(0,q.qs.length);q.i=Math.min(q.answers.length,q.qs.length-1);q.done=!!rec.done||q.answers.length>=q.qs.length}return q}
+function gradeOf(n,t){const p=n/t;return p>=1?"A+":p>=.9?"A":p>=.8?"B":p>=.7?"C":p>=.6?"D":"F"}
+const GRANK=["F","D","C","B","A","A+"];
+function saveBest(g){const b=LS.get("bref-best");if(!b||GRANK.indexOf(g)>GRANK.indexOf(b))LS.set("bref-best",g)}
+function vTrivia(){return `<div class="crumbs"><a href="#/">Home</a> / Trivia</div><h1>Orioles trivia</h1><p class="muted">Ten questions per round, written from the dynasty database. Nothing here comes from real-world baseball.</p><div class="quiz" id="quiz">${quizBody()}</div>`}
+function shareText(){const n=QZ.answers.filter(a=>a.ok).length,t=QZ.qs.length;const url=SOURCE==="public"?"\n"+location.href.split("#")[0]+"#/trivia":"";return `Baltimore Reference daily trivia, ${prettyDate(QZ.date)}\n${gradeOf(n,t)} (${n}/${t})\n${QZ.answers.map(a=>a.ok?"🟩":"🟥").join("")}${url}`}
+function quizBody(){
+  if(!QZ){const k=todayKey();const rec=dailyLog()[k];const b=LS.get("bref-best");const st=streak();
+    const dStatus=rec&&rec.done?`Done today: <b>${esc(rec.grade)}</b> (${rec.n}/10)`:rec&&rec.answers&&rec.answers.length?`In progress: ${rec.answers.length} of 10 answered`:"Not played yet today";
+    return `<div class="modes"><div class="qcard daily"><div class="qtext" style="margin-top:0">Daily challenge</div><p>${prettyDate(k)}. Everyone with the same database gets the same 10 questions today, so you can compare scores. One try per day.</p><p>${dStatus}</p>${st?`<p class="streak">${st}-day streak</p>`:""}<button class="btn" type="button" data-qd>${rec&&rec.done?"See today's result":rec&&rec.answers&&rec.answers.length?"Resume":"Play today's challenge"}</button></div>
+    <div class="qcard"><div class="qtext" style="margin-top:0">Practice round</div><p>A fresh random set of 10, as many times as you like.</p>${b?`<p>Best practice grade: <b>${esc(b)}</b></p>`:""}<button class="btn ghost" type="button" data-qs>Start a practice round</button></div></div>`}
+  if(!QZ.qs.length)return `<div class="qcard"><p>There isn't enough data to write questions yet. Add a few seasons, then try again.</p><button class="btn ghost" type="button" data-qb>Back</button></div>`;
+  const label=QZ.mode==="daily"?`Daily challenge, ${prettyDate(QZ.date)}`:"Practice round";
+  const prog=`<div class="qprog" aria-hidden="true">${QZ.qs.map((q,i)=>`<span class="${i<QZ.answers.length?(QZ.answers[i].ok?"ok":"no"):i===QZ.i?"cur":""}"></span>`).join("")}</div>`;
+  if(QZ.done){const n=QZ.answers.filter(a=>a.ok).length,t=QZ.qs.length,g=gradeOf(n,t);const daily=QZ.mode==="daily";
+    return `<div class="qcard">${prog}<div class="qnum">${esc(label)}</div><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><div class="grade" aria-label="Grade ${g}">${g}</div><div><div class="qtext" style="margin:0">${n} of ${t} correct</div><p class="muted">${g==="A+"?"A perfect round. You know this franchise cold.":g==="A"||g==="B"?"Strong round. The notebook would be proud.":g==="C"?"Solid. A few seasons to brush up on.":"Time to revisit the season pages."}</p>${daily?(streak()?`<p class="streak">${streak()}-day streak</p>`:""):(LS.get("bref-best")?`<p><b>Best practice grade:</b> ${esc(LS.get("bref-best"))}</p>`:"")}
+    <div style="display:flex;gap:8px;flex-wrap:wrap">${daily?`<button class="btn" type="button" data-copy>Copy result</button>${navigator.share?`<button class="btn ghost" type="button" data-share>Share</button>`:""}`:`<button class="btn" type="button" data-qs>Play another round</button>`}<button class="btn ghost" type="button" data-qb>Back to trivia</button></div></div></div>
+    ${daily?`<div class="sharebox" id="sharebox"><pre>${esc(shareText())}</pre><span class="small muted" id="copyMsg">Come back tomorrow for a new set.</span></div>`:""}
+    <h3 style="margin-top:16px">Review</h3><ol class="review">${QZ.qs.map((q,i)=>`<li><b>${esc(q.q)}</b><br>${QZ.answers[i]&&QZ.answers[i].ok?`<span style="color:var(--good)">You answered ${esc(q.a)}.</span>`:`<span style="color:var(--bad)">You answered ${esc(QZ.answers[i]?QZ.answers[i].pick:"")}.</span> Correct: <b>${esc(q.a)}</b>.`} <span class="muted">${q.explain}</span></li>`).join("")}</ol></div>`}
+  const q=QZ.qs[QZ.i];const ans=QZ.answers[QZ.i];
+  return `<div class="qcard">${prog}<div class="qnum">${esc(label)}: question ${QZ.i+1} of ${QZ.qs.length}</div><div class="qtext" id="qtext">${esc(q.q)}</div>
+  <div class="opts" role="group" aria-labelledby="qtext">${q.opts.map(o=>`<button type="button" class="opt ${ans?(o===q.a?"right":o===ans.pick?"wrong":""):""}" data-opt="${esc(o)}" ${ans?"disabled":""}>${esc(o)}</button>`).join("")}</div>
+  ${ans?`<div class="explain" role="status"><b>${ans.ok?"Correct.":"Not quite."}</b> ${q.explain}</div><p style="margin-top:12px"><button class="btn" type="button" data-qn>${QZ.i+1<QZ.qs.length?"Next question":"See my grade"}</button></p>`:""}</div>`;
+}
+function persist(){if(QZ&&QZ.mode==="daily"){const n=QZ.answers.filter(a=>a.ok).length;saveDaily(QZ.date,{answers:QZ.answers,done:QZ.done,n,grade:QZ.done?gradeOf(n,QZ.qs.length):null})}}
+function bindQuiz(){const root=document.getElementById("quiz");if(!root)return;
+  root.onclick=async e=>{
+    if(e.target.closest("[data-qs]")){QZ=newRound(null);QZ.mode="practice";root.innerHTML=quizBody();focusQ();return}
+    if(e.target.closest("[data-qd]")){QZ=startDaily();root.innerHTML=quizBody();focusQ();return}
+    if(e.target.closest("[data-qb]")){QZ=null;root.innerHTML=quizBody();focusQ();return}
+    if(e.target.closest("[data-copy]")){const txt=shareText();const msg=root.querySelector("#copyMsg");try{await navigator.clipboard.writeText(txt);if(msg)msg.textContent="Copied. Paste it into your group chat."}catch(err){const box=root.querySelector("#sharebox");if(box){box.innerHTML=`<textarea readonly aria-label="Your result">${esc(txt)}</textarea><span class="small muted">Copy the text above.</span>`;const ta=box.querySelector("textarea");ta.focus();ta.select()}}return}
+    if(e.target.closest("[data-share]")){try{await navigator.share({text:shareText()})}catch(err){}return}
+    const o=e.target.closest("[data-opt]");if(o&&!o.disabled){const q=QZ.qs[QZ.i];QZ.answers[QZ.i]={pick:o.dataset.opt,ok:o.dataset.opt===q.a};persist();root.innerHTML=quizBody();const n=root.querySelector("[data-qn]");if(n)n.focus();return}
+    if(e.target.closest("[data-qn]")){if(QZ.i+1<QZ.qs.length)QZ.i++;else{QZ.done=true;if(QZ.mode==="practice")saveBest(gradeOf(QZ.answers.filter(a=>a.ok).length,QZ.qs.length));persist()}root.innerHTML=quizBody();focusQ()}
+  }}
+function focusQ(){const f=document.querySelector("#quiz .opt:not([disabled]), #quiz [data-qn], #quiz [data-qd], #quiz [data-copy], #quiz [data-qs]");if(f)f.focus()}
+
+/* ---------- router ---------- */
+function notFound(msg){return `<div class="status"><h1>Page not found</h1><p>${msg||"That page doesn't exist."}</p><p><a class="btn" href="#/">Go to the home page</a></p></div>`}
+const navEl=document.querySelector(".nav"),menuBtn=document.getElementById("menuBtn");
+menuBtn.addEventListener("click",()=>{const o=navEl.classList.toggle("open");menuBtn.setAttribute("aria-expanded",o?"true":"false");menuBtn.textContent=o?"Close":"Menu"});
+function closeMenu(){navEl.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");menuBtn.textContent="Menu"}
+document.addEventListener("keydown",e=>{if(e.key==="/"&&!e.ctrlKey&&!e.metaKey&&!/^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName||""))&&!e.target.isContentEditable){e.preventDefault();qEl.focus()}});
+function route(){
+  if(!DB)return;
+  const h=(location.hash||"#/").replace(/^#\/?/,"");const [sec,arg]=h.split("/");
+  const views={"":vHome,seasons:vSeasons,season:vSeason,players:vPlayers,player:vPlayer,compare:vCompare,leaders:vLeaders,analytics:vAnalytics,league:vLeague,hof:vHof,trivia:vTrivia,team:vTeam,projections:vProjections,timeline:vTimeline,glossary:vGlossary};
+  const v=views[sec||""];
+  for(const k in TABLES)delete TABLES[k];
+  let html;try{html=v?v(arg):notFound()}catch(e){console.error(e);html=`<div class="status"><h1>This page couldn't be built</h1><p>Something in the data didn't match what this page expects: ${esc(e.message)}. The rest of the site still works.</p><p><a class="btn" href="#/">Go to the home page</a></p></div>`}
+  app.innerHTML=(warnings.length?`<div class="warn">${warnings.map(esc).join("<br>")}</div>`:"")+html;
+  const navKey={"":"home",season:"seasons",player:"players",team:"league"}[sec||""]||sec;
+  document.querySelectorAll("#nav a").forEach(a=>{const on=a.dataset.r===navKey;a.classList.toggle("on",on);if(on)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  const titles={seasons:"Seasons",season:`${arg} season`,players:"Players",player:DB.P[arg]?DB.P[arg].name:"Player",compare:"Compare players",leaders:"Leaders",analytics:"Analytics",league:"Around the League",hof:"Hall of Fame",trivia:"Trivia",team:decodeURIComponent(arg||""),projections:"Projections",timeline:"Timeline",glossary:"Glossary"};
+  document.title=(sec&&titles[sec]?titles[sec]+" | ":"")+"Baltimore Reference";
+  closeMenu();
+  if(sec==="players")bindPlayers();if(sec==="compare")bindCompare();if(sec==="trivia")bindQuiz();
+  if(sec==="leaders")document.querySelectorAll("[data-lt]").forEach(b=>b.addEventListener("click",()=>{LTAB=b.dataset.lt;route()}));
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+/* ---------- status screens ---------- */
+function showLoading(){app.innerHTML=`<div class="status"><h1>Loading the Orioles' history</h1><p>Reading the dynasty database from Google Sheets.</p><div class="loading-bar"><i></i></div></div>`}
+async function openPerms(){try{const pm=await window.claude.use("permissions");if(pm&&pm.manage)await pm.manage()}catch(e){}}
+function showError(e){
+  const code=e&&e.code||"upstream_error";const msg=e&&e.message||"";
+  const C={
+    no_mcp:["Open this page in Claude","Inside Claude, Baltimore Reference reads the dynasty database through your Google Sheets connection. Open it from your Claude artifacts to load the data.",""],
+    public_blocked:["Can't read the dynasty sheet","Baltimore Reference reads a public Google Sheet. The sheet's owner needs to set sharing to \"Anyone with the link\" as a Viewer. Then reload this page.","reload"],
+    public_http:["Google Sheets returned an error",`The sheet didn't load (${msg}). Try again in a moment.`,"retry"],
+    server_not_connected:["Connect Google Sheets","Add Google Sheets in claude.ai Settings, Connectors, then reload this page.","reload"],
+    needs_reauth:["Reconnect Google Sheets","Your Google Sheets connection has expired. Reconnect it in claude.ai Settings, Connectors, then reload.","reload"],
+    selection_required:["Choose a Google Sheets connection","You have more than one Google Sheets connection. Choose one when Claude asks, then reload.","reload"],
+    not_in_manifest:["Google Sheets is turned off for this page","Allow Google Sheets for this page in its permissions, then reload.","perms"],
+    blocked_by_policy:["Google Sheets is blocked","Your organization's policy blocks Google Sheets for this page.",""],
+    approval_required:["Allow access to your sheet","This page needs your approval to read the dynasty database from Google Sheets.","approve"],
+    tool_error:["Google Sheets couldn't read the database",`Google Sheets reported: ${msg}. Check that you still have access to the MLB The Show Dynasty Database spreadsheet.`,"retry"],
+    server_unavailable:["Google Sheets didn't respond","The connection timed out. Try again in a moment.","retry"],
+    consent_required:["Allow access to your sheet","Allow Google Sheets for this page when asked, then try again.","retry"],
+    not_granted:["Open this page in Claude","This view can't use connectors. Open the page from your Claude artifacts.",""],
+    capability_disabled:["Open this page in Claude","This view can't use connectors. Open the page from your Claude artifacts.",""]
+  };
+  const [t,b,act]=C[code]||["The database didn't load",`Loading stopped with "${code}". Try again.`,"retry"];
+  const btn=act==="reload"?`<button class="btn" type="button" data-act="reload">Reload</button>`:act==="perms"?`<button class="btn" type="button" data-act="perms">Open permissions</button> <button class="btn ghost" type="button" data-act="reload">Reload</button>`:act==="approve"?`<button class="btn" type="button" data-act="retry">Allow and load</button>`:act==="retry"?`<button class="btn" type="button" data-act="retry">Try again</button>`:"";
+  app.innerHTML=`<div class="status"><h1>${esc(t)}</h1><p>${esc(b)}</p>${btn}</div>`;
+  app.querySelectorAll("[data-act]").forEach(x=>x.addEventListener("click",()=>{const a=x.dataset.act;if(a==="reload")location.reload();else if(a==="perms")openPerms();else start(true)}));
+}
+function stampFooter(){const el=document.getElementById("updated");if(!el)return;const d=lastUpdated?new Date(lastUpdated):null;el.innerHTML=`${d?"Data as of "+d.toLocaleString([], {dateStyle:"medium",timeStyle:"short"})+". ":""}<a href="#/glossary">Glossary</a> &nbsp; <button class="btn ghost" type="button" id="refreshBtn" style="padding:4px 10px">Refresh data</button>`;document.getElementById("refreshBtn").addEventListener("click",()=>start(true))}
+async function start(refresh){
+  showLoading();
+  const inClaude=!!(window.claude&&window.claude.use);
+  if(SOURCE==null){if(inClaude){try{MCP=await window.claude.use("mcp")}catch(e){MCP=null}}SOURCE=MCP?"claude":"public"}
+  try{const raw=await loadAll(refresh);DB=build(raw);CURVES=null;stampFooter();route()}
+  catch(e){console.error(e);if(SOURCE==="public"&&inClaude&&e&&e.code==="public_blocked")showError({code:"no_mcp"});else showError(e)}
+}
+start(false);
+})();
+</script>
+</body></html>
